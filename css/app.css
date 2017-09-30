@@ -7,17 +7,127 @@
   z-index: -1;
   background: no-repeat fixed center center; }
 
+.profile-image {
+  width: 100%;
+  height: 380px;
+  -o-clip-path: polygon(0 0, 100% 0, 100% 100%, 22% 100%);
+  -ms-clip-path: polygon(0 0, 100% 0, 100% 100%, 22% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 22% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 22% 100%); }
+
+.fa-facebook {
+  color: #fff;
+  background: #394AAB;
+  width: 37px;
+  height: 37px;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+  .fa-facebook:hover {
+    background-color: #5263c5; }
+
+.fa-google-plus {
+  color: #fff;
+  background: #F13A37;
+  width: 37px;
+  height: 37px;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+  .fa-google-plus:hover {
+    background-color: #f46967; }
+
+.fa-linkedin {
+  color: #fff;
+  background: #1A5DB6;
+  width: 37px;
+  height: 37px;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+  .fa-linkedin:hover {
+    background-color: #2374e0; }
+
+.fa-instagram {
+  color: #fff;
+  background: #285378;
+  width: 37px;
+  height: 37px;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+  .fa-instagram:hover {
+    background-color: #356d9e; }
+
+.fa-snapchat-ghost {
+  color: #fff;
+  background: #FEDC4A;
+  width: 37px;
+  height: 37px;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+  .fa-snapchat-ghost:hover {
+    background-color: #fee67d; }
+
+.button-floating {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 0;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer; }
+
+.social {
+  vertical-align: middle;
+  text-align: center;
+  margin: 5px; }
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #1d1e1f; }
+
+.circle-icon-facebook {
+  background: #394AAB;
+  width: 37px;
+  height: 37px;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+  .circle-icon-facebook:hover {
+    background-color: #5263c5; }
+
+.social-icons {
+  display: inline-block; }
+  .social-icons a {
+    text-decoration: none; }
+
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background-color: #F4F4F4; }
+
+h4, h6 {
+  font-family: "Raleway", sans-serif; }
 
 .fast-me-container {
-  height: 380px;
+  height: auto;
   width: 970px;
-  margin: auto;
   display: block;
-  margin-top: 170px;
+  margin: 170px auto auto;
   background-color: #159E5C;
-  box-shadow: 3px 3px 40px 0px #000000; }
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
+.my-info-content {
+  padding: 40px; }
+
+.info-name {
+  display: block;
+  width: 100%;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29); }
 
 /*# sourceMappingURL=app.css.map */
