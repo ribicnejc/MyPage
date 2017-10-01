@@ -1,8 +1,29 @@
-.fast-me-container
-  height: auto
+.myPageContainer
   width: 970px
+  height: auto
   display: block
-  margin: 170px auto auto
-
-  background-color: $color-primary-green
+  margin: auto
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
+
+.fast-me-container
+  margin-top: 170px
+  background-color: $color-primary-green
+
+
+
+
+
+//Small break point
+@media (min-width: 57px)
+  .myPageContainer
+    width: 100%
+
+//Medium break point
+@media (min-width: 768px)
+  .myPageContainer
+    width: 720px
+
+//Large break point
+@media (min-width: 992px)
+  .myPageContainer
+    width: 940px

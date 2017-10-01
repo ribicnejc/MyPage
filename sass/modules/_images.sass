@@ -16,8 +16,13 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 22% 100%)
   clip-path: polygon(0 0, 100% 0, 100% 100%, 22% 100%)
   margin-left: 15px
+  overflow: hidden
 
-
+.profile-image-circle
+  border-radius: 50%
+  height: 200px
+  margin: -100px auto auto
+  display: none
 
 .fa-facebook
   color: $color-white
@@ -38,3 +43,29 @@
 .fa-snapchat-ghost
   color: $color-white
   +social-button($color-snapchat)
+
+
+@media screen and (min-width: 57px)
+  .myPageContainer
+    width: 100%
+
+  .profile-image-circle
+    display: block
+
+  .profile-image
+    display: none
+
+//Medium break point
+@media (min-width: 768px)
+  .myPageContainer
+    width: 720px
+
+  .profile-image-circle
+    display: none
+
+  .profile-image
+    display: block
+//Large break point
+@media (min-width: 992px)
+  .myPageContainer
+    width: 940px
