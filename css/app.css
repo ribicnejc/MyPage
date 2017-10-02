@@ -1,8 +1,11 @@
-.shadowed-text, .title-main-text, .title-second-main-text {
+.shadowed-text, .title-main-text, .title-second-main-text, .skill-text {
   display: block;
   width: 100%;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29); }
+
+.shadow-card {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
 .body-image {
   position: relative;
@@ -84,6 +87,14 @@
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
   .fa-snapchat-ghost:hover {
     background-color: #fee67d; }
+
+.section-icon {
+  width: 66px;
+  height: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
 @media screen and (min-width: 57px) {
   .myPageContainer {
@@ -174,12 +185,18 @@ a, p, li {
 .card-shadow {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
+.section-text {
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 110%;
+  font-family: "Raleway", sans-serif;
+  color: #585858; }
+
 .myPageContainer {
   width: 970px;
   height: auto;
   display: block;
-  margin: auto;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+  margin: auto; }
 
 .fast-me-container {
   margin-top: 170px;
@@ -188,6 +205,12 @@ a, p, li {
 .about-me-container {
   margin-top: 55px;
   background-color: #fff; }
+
+.education-container {
+  margin-top: 55px; }
+
+.skills-container {
+  margin-top: 55px; }
 
 @media (min-width: 57px) {
   .myPageContainer {
@@ -242,5 +265,53 @@ a, p, li {
 
 .button-group-green {
   text-align: center; }
+
+.timeline-dot {
+  visibility: visible;
+  -webkit-transform: translateY(0) scale(1);
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  -webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+  transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; }
+
+.skills-content {
+  background-color: #159E5C; }
+
+.progress {
+  background-color: #12874f; }
+
+.progress-bar {
+  height: 4px;
+  background-color: #fff; }
+
+.skill-text {
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin: 10px 0 10px; }
+
+.skill-name {
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff; }
+
+.skill-percent {
+  padding: 0;
+  font-family: "Muli", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff; }
+
+.skill-bars {
+  padding: 10px 0 10px; }
+
+.skill-col {
+  padding: 10px 0; }
+
+.skills-content {
+  margin-top: 20px;
+  padding: 30px 30px; }
 
 /*# sourceMappingURL=app.css.map */
