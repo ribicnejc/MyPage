@@ -140,6 +140,16 @@
   .social-icons a {
     text-decoration: none; }
 
+.button-green {
+  background-color: #06A763;
+  width: 173px;
+  margin: 7px;
+  text-align: center;
+  color: white;
+  font-family: "Muli", sans-serif;
+  font-size: 15px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
 body {
   margin: 0;
   padding: 0;
@@ -158,6 +168,12 @@ div.row {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased; }
 
+a, p, li {
+  font-weight: 400; }
+
+.card-shadow {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
 .myPageContainer {
   width: 970px;
   height: auto;
@@ -168,6 +184,10 @@ div.row {
 .fast-me-container {
   margin-top: 170px;
   background-color: #159E5C; }
+
+.about-me-container {
+  margin-top: 55px;
+  background-color: #fff; }
 
 @media (min-width: 57px) {
   .myPageContainer {
@@ -206,5 +226,21 @@ div.row {
   font-family: "Muli", sans-serif; }
   .infos .title {
     margin-right: 5px; }
+
+.card-content {
+  padding: 40px; }
+
+.text-about-me {
+  color: #757575;
+  text-align: center;
+  line-height: 1.3rem;
+  margin: 0; }
+
+.card-cv {
+  padding: 20px;
+  border-top: 1px solid #EAEAEA; }
+
+.button-group-green {
+  text-align: center; }
 
 /*# sourceMappingURL=app.css.map */
