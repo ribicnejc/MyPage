@@ -21,13 +21,12 @@
 
 .profile-image {
   width: 100%;
-  height: 380px;
+  height: 385px;
   padding: 0;
   -o-clip-path: polygon(0 0, 100% 0, 100% 100%, 22% 100%);
   -ms-clip-path: polygon(0 0, 100% 0, 100% 100%, 22% 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 22% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 22% 100%);
-  margin-left: 15px;
   overflow: hidden; }
 
 .profile-image-circle {
@@ -90,6 +89,17 @@
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
   .fa-snapchat-ghost:hover {
     background-color: #fee67d; }
+
+.fa-github {
+  color: #fff;
+  background: #202020;
+  width: 37px;
+  height: 37px;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+  .fa-github:hover {
+    background-color: #3a3a3a; }
 
 .section-icon {
   width: 66px;
@@ -202,7 +212,7 @@ a, p, li {
   margin: auto; }
 
 .fast-me-container {
-  margin-top: 170px;
+  margin-top: -200px;
   background-color: #159E5C; }
 
 .about-me-container {
@@ -219,6 +229,9 @@ a, p, li {
   margin-top: 55px; }
 
 .blog-container {
+  margin-top: 55px; }
+
+.contact-container {
   margin-top: 55px; }
 
 @media (min-width: 57px) {
@@ -261,6 +274,13 @@ a, p, li {
   .infos .title {
     margin-right: 5px; }
 
+.profile-image-content {
+  overflow: hidden;
+  padding: 0; }
+
+.social-icons {
+  margin-top: 12px; }
+
 @media screen and (min-width: 57px) {
   .title-main-text, .title-second-main-text {
     text-align: center; }
@@ -270,7 +290,10 @@ a, p, li {
     text-align: center; }
 
   .infos {
-    text-align: center; } }
+    text-align: center; }
+
+  .my-info-content {
+    padding-right: 40px; } }
 @media (min-width: 768px) {
   .title-main-text, .title-second-main-text {
     text-align: left; }
@@ -280,7 +303,19 @@ a, p, li {
     text-align: left; }
 
   .infos {
-    text-align: left; } }
+    text-align: left; }
+
+  .my-info-content {
+    padding-right: 0; }
+
+  .profile-image-content {
+    margin: 0; } }
+@media (min-width: 992px) {
+  .my-info-content {
+    padding-right: 40px; }
+
+  .profile-image-content {
+    padding-left: 15px; } }
 .card-content {
   padding: 40px; }
 
@@ -381,5 +416,27 @@ a, p, li {
 
 .interest-description {
   border-top: 1px solid #EAEAEA; }
+
+.header-background {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 370px;
+  background-image: url("http://dev.nejcribic.com/web/assets/background-book.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; }
+
+div#map {
+  width: 100%;
+  height: 417px;
+  background-color: gray; }
+
+.google-map {
+  padding: 0;
+  padding-left: 15px; }
+
+.contact-form {
+  padding-left: 20px; }
 
 /*# sourceMappingURL=app.css.map */

@@ -24,10 +24,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/app.css">
 
+    <!--Javascripts-->
+    <script src="javascript/main.js"></script>
+    <!--Icons-->
     <link rel="shortcut icon" href="assets/NRLogo.ico"/>
 </head>
-<body>
 
+<body>
+<header>
+    <div class="header-background section"></div>
+</header>
 <!--<img class="background-image" src="assets/background-book.jpg">-->
 
 <div class="container-fluid">
@@ -94,13 +100,16 @@
                         <a href="#">
                             <i class="fa fa-instagram social" aria-hidden="true"></i>
                         </a>
+                        <!--<a href="#">-->
+                            <!--<i class="fa fa-snapchat-ghost social" aria-hidden="true"></i>-->
+                        <!--</a>-->
                         <a href="#">
-                            <i class="fa fa-snapchat-ghost social" aria-hidden="true"></i>
+                            <i class="fa fa-github social" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-5">
-                    <img class="img-fluid profile-image" src="assets/meSquare401.jpg">
+                <div class="col-md-6 col-lg-5 profile-image-content">
+                    <img class="img-fluid profile-image" src="assets/meSquare385.jpg">
                 </div>
             </div>
 
@@ -473,22 +482,51 @@
     <!--==========================================
                           BLOG
     ===========================================-->
-    <div class="myPageContainer">
-        <section class="blog-container">
-            <div class="container-fluid">
-                <!-- SECTION TITLE -->
-                <div class="section-title">
-                    <h4 class="text-uppercase text-center section-text"><img class="img-fluid section-icon"
-                                                                             src="assets/post-it.png" alt="Blog icon">BLOG
-                    </h4>
-                </div>
-            </div>
-        </section>
-    </div>
+    <!--<div class="myPageContainer">-->
+        <!--<section class="blog-container">-->
+            <!--<div class="container-fluid">-->
+                <!--&lt;!&ndash; SECTION TITLE &ndash;&gt;-->
+                <!--<div class="section-title">-->
+                    <!--<h4 class="text-uppercase text-center section-text"><img class="img-fluid section-icon"-->
+                                                                             <!--src="assets/post-it.png" alt="Blog icon">BLOG-->
+                    <!--</h4>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</section>-->
+    <!--</div>-->
 
     <!--==========================================
                         CONTACT
     ===========================================-->
+    <div class="myPageContainer">
+        <section class="contact-container">
+            <div class="container-fluid">
+                <!-- SECTION TITLE -->
+                <div class="section-title">
+                    <h4 class="text-uppercase text-center section-text"><img class="img-fluid section-icon"
+                                                                             src="assets/envelope.png" alt="Letter icon">CONTACT
+                    </h4>
+                </div>
+            </div>
+            <div class="contact-content">
+                <div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-5 contact-form">
+                            <form>
+                                <label>
+                                    <input type="text" />
+                                    <div class="label-text">First name</div>
+                                </label>
+                            </form>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-7 google-map">
+                            <div id="map" class="shadow-card"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
 
 </div>
@@ -501,6 +539,7 @@
         crossorigin="anonymous"></script>
 <!--  Always Download latest version of Boostrap and add here-->
 <script src="bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDONFCSlpnxRLIsXaxQARMnLI9CJXZu4oE&callback=initMap"></script>
 </body>
 </html>
 

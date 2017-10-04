@@ -33,6 +33,13 @@
   .title
     margin-right: 5px
 
+.profile-image-content
+  overflow: hidden
+  padding: 0
+
+.social-icons
+  margin-top: 12px
+
 //Small break point
 @media screen and (min-width: 57px)
   .title-main-text, .title-second-main-text
@@ -42,6 +49,8 @@
     text-align: center
   .infos
     text-align: center
+  .my-info-content
+    padding-right: 40px
 
 //Medium break point
 @media (min-width: 768px)
@@ -52,6 +61,14 @@
     text-align: left
   .infos
     text-align: left
+  .my-info-content
+    padding-right: 0
+  .profile-image-content
+    margin: 0
 
 //Large break point
 @media (min-width: 992px)
+  .my-info-content
+    padding-right: 40px
+  .profile-image-content
+    padding-left: 15px
