@@ -19,6 +19,8 @@
 .profile-list
   list-style-type: none
   padding-left: 0
+  display: inline-block
+  margin: auto
 
 .infos .profile-list .title .fa-skype
   font-size: 23px
@@ -33,14 +35,23 @@
 
 //Small break point
 @media screen and (min-width: 57px)
-  //.title-main-text, .title-second-main-text
-  //  text-align: center
-  //.social-icons
-  //  display: block
-  //  text-align: center
+  .title-main-text, .title-second-main-text
+    text-align: center
+  .social-icons
+    display: block
+    text-align: center
+  .infos
+    text-align: center
 
 //Medium break point
 @media (min-width: 768px)
+  .title-main-text, .title-second-main-text
+    text-align: left
+  .social-icons
+    display: block
+    text-align: left
+  .infos
+    text-align: left
 
 //Large break point
 @media (min-width: 992px)

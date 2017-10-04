@@ -32,8 +32,8 @@
 
 .profile-image-circle {
   border-radius: 50%;
-  height: 200px;
-  margin: -100px auto auto;
+  height: 150px;
+  margin: -75px auto auto;
   display: none; }
 
 .fa-facebook {
@@ -246,7 +246,9 @@ a, p, li {
 
 .profile-list {
   list-style-type: none;
-  padding-left: 0; }
+  padding-left: 0;
+  display: inline-block;
+  margin: auto; }
 
 .infos .profile-list .title .fa-skype {
   font-size: 23px;
@@ -259,6 +261,26 @@ a, p, li {
   .infos .title {
     margin-right: 5px; }
 
+@media screen and (min-width: 57px) {
+  .title-main-text, .title-second-main-text {
+    text-align: center; }
+
+  .social-icons {
+    display: block;
+    text-align: center; }
+
+  .infos {
+    text-align: center; } }
+@media (min-width: 768px) {
+  .title-main-text, .title-second-main-text {
+    text-align: left; }
+
+  .social-icons {
+    display: block;
+    text-align: left; }
+
+  .infos {
+    text-align: left; } }
 .card-content {
   padding: 40px; }
 
