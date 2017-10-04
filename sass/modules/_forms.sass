@@ -1,0 +1,90 @@
+@import "compass"
+$tundora: #000
+
+label
+  display: block
+  letter-spacing: 0
+  padding-top: 20px
+  text-align: left
+  font-family: $font-family-muli
+
+  .label-text
+    color: $color-font-gray3
+    cursor: text
+    font-size: 1rem
+    line-height: 1rem
+    text-transform: capitalize
+    +transform(translateY(-24px))
+    transition: all 0.3s
+
+  input
+    background-color: transparent
+    border: 0
+    border-bottom: 1px solid $color-font-gray3
+    color: $color-font-gray3
+    font-size: 1rem
+    letter-spacing: 1px
+    outline: 0
+    padding: 0px
+    text-align: left
+    transition: all 0.3s
+    width: 100%
+
+    &:focus
+      max-width: 100%
+      width: 100%
+      border-bottom: 2px solid $color-primary-blue
+
+      & + .label-text
+        color: $color-primary-blue
+        font-size: 11px
+        +transform(translateY(-54px))
+
+    &:valid + .label-text
+      font-size: 13px
+      +transform(translateY(-54px))
+
+label.text-area
+  display: block
+  letter-spacing: 0
+  padding-top: 20px
+  text-align: left
+  font-family: $font-family-muli
+
+  .label-text
+    color: $color-font-gray3
+    cursor: text
+    font-size: 1rem
+    line-height: 1rem
+    padding-bottom: 50px
+    text-transform: capitalize
+    +transform(translateY(-84px))
+    transition: all 0.3s
+
+  textarea
+    background-color: transparent
+    border: 0
+    height: 80px
+    border-bottom: 1px solid $color-font-gray3
+    color: $color-font-gray3
+    font-size: 1rem
+    letter-spacing: 1px
+    outline: 0
+    padding: 0px
+    text-align: left
+    transition: all 0.3s
+    width: 100%
+
+    &:focus
+      max-width: 100%
+      width: 100%
+      border-bottom: 2px solid $color-primary-blue
+
+      & + .label-text
+        color: $color-primary-blue
+        font-size: 11px
+        +transform(translateY(-114px))
+
+    &:valid + .label-text
+      font-size: 13px
+      +transform(translateY(-114px))

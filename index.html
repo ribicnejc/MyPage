@@ -22,10 +22,9 @@
     <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap-grid.min.css">
     <!--CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/app.css">
+    <!--<link rel="stylesheet" href="css/app.css">-->
+    <link rel="stylesheet" href="stylesheets/app.css">
 
-    <!--Javascripts-->
-    <script src="javascript/main.js"></script>
     <!--Icons-->
     <link rel="shortcut icon" href="assets/NRLogo.ico"/>
 </head>
@@ -101,7 +100,7 @@
                             <i class="fa fa-instagram social" aria-hidden="true"></i>
                         </a>
                         <!--<a href="#">-->
-                            <!--<i class="fa fa-snapchat-ghost social" aria-hidden="true"></i>-->
+                        <!--<i class="fa fa-snapchat-ghost social" aria-hidden="true"></i>-->
                         <!--</a>-->
                         <a href="#">
                             <i class="fa fa-github social" aria-hidden="true"></i>
@@ -483,16 +482,16 @@
                           BLOG
     ===========================================-->
     <!--<div class="myPageContainer">-->
-        <!--<section class="blog-container">-->
-            <!--<div class="container-fluid">-->
-                <!--&lt;!&ndash; SECTION TITLE &ndash;&gt;-->
-                <!--<div class="section-title">-->
-                    <!--<h4 class="text-uppercase text-center section-text"><img class="img-fluid section-icon"-->
-                                                                             <!--src="assets/post-it.png" alt="Blog icon">BLOG-->
-                    <!--</h4>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</section>-->
+    <!--<section class="blog-container">-->
+    <!--<div class="container-fluid">-->
+    <!--&lt;!&ndash; SECTION TITLE &ndash;&gt;-->
+    <!--<div class="section-title">-->
+    <!--<h4 class="text-uppercase text-center section-text"><img class="img-fluid section-icon"-->
+    <!--src="assets/post-it.png" alt="Blog icon">BLOG-->
+    <!--</h4>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</section>-->
     <!--</div>-->
 
     <!--==========================================
@@ -504,20 +503,38 @@
                 <!-- SECTION TITLE -->
                 <div class="section-title">
                     <h4 class="text-uppercase text-center section-text"><img class="img-fluid section-icon"
-                                                                             src="assets/envelope.png" alt="Letter icon">CONTACT
+                                                                             src="assets/envelope.png"
+                                                                             alt="Letter icon">CONTACT
                     </h4>
                 </div>
             </div>
             <div class="contact-content">
                 <div>
                     <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-5 contact-form">
-                            <form>
-                                <label>
-                                    <input type="text" />
-                                    <div class="label-text">First name</div>
-                                </label>
-                            </form>
+                        <div class="col-sm-12 col-md-12 col-lg-5 contact-inputs ">
+                            <div class="form-content shadow-card">
+                                <div class="">
+                                    <form class="contact-form">
+                                        <label>
+                                            <input type="text" required/>
+                                            <div class="label-text">Name</div>
+                                        </label>
+                                        <label>
+                                            <input type="text" required/>
+                                            <div class="label-text">Subject</div>
+                                        </label>
+                                        <label>
+                                            <input type="text" required/>
+                                            <div class="label-text">Email</div>
+                                        </label>
+                                        <label class="text-area">
+                                            <textarea id="ta" type="text" required></textarea>
+                                            <div id="ta-label" class="label-text">Message</div>
+                                        </label>
+                                        <button class="btn button-green">Send</button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-7 google-map">
                             <div id="map" class="shadow-card"></div>
@@ -530,6 +547,9 @@
 
 
 </div>
+<!--Javascripts-->
+<script src="javascript/main.js"></script>
+<!--<script src="javascript/jquery.autoresize.min.js" type="text/javascript" ></script>-->
 
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
         integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"

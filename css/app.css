@@ -1,442 +1,89 @@
-.shadowed-text, .title-main-text, .title-second-main-text, .skill-text {
-  display: block;
-  width: 100%;
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29); }
-
-.shadow-card {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
-
-.top-separator {
-  border-top: 1px solid #EAEAEA; }
-
-.body-image {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 370px;
-  background-size: cover;
-  z-index: -1;
-  background: no-repeat fixed center center; }
-
-.profile-image {
-  width: 100%;
-  height: 385px;
-  padding: 0;
-  -o-clip-path: polygon(0 0, 100% 0, 100% 100%, 22% 100%);
-  -ms-clip-path: polygon(0 0, 100% 0, 100% 100%, 22% 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 22% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 22% 100%);
-  overflow: hidden; }
-
-.profile-image-circle {
-  border-radius: 50%;
-  height: 150px;
-  margin: -75px auto auto;
-  display: none; }
-
-.fa-facebook {
-  color: #fff;
-  background: #394AAB;
-  width: 37px;
-  height: 37px;
-  padding: 10px;
-  border-radius: 50%;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
-  .fa-facebook:hover {
-    background-color: #5263c5; }
-
-.fa-google-plus {
-  color: #fff;
-  background: #F13A37;
-  width: 37px;
-  height: 37px;
-  padding: 10px;
-  border-radius: 50%;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
-  .fa-google-plus:hover {
-    background-color: #f46967; }
-
-.fa-linkedin {
-  color: #fff;
-  background: #1A5DB6;
-  width: 37px;
-  height: 37px;
-  padding: 10px;
-  border-radius: 50%;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
-  .fa-linkedin:hover {
-    background-color: #2374e0; }
-
-.fa-instagram {
-  color: #fff;
-  background: #285378;
-  width: 37px;
-  height: 37px;
-  padding: 10px;
-  border-radius: 50%;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
-  .fa-instagram:hover {
-    background-color: #356d9e; }
-
-.fa-snapchat-ghost {
-  color: #fff;
-  background: #FEDC4A;
-  width: 37px;
-  height: 37px;
-  padding: 10px;
-  border-radius: 50%;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
-  .fa-snapchat-ghost:hover {
-    background-color: #fee67d; }
-
-.fa-github {
-  color: #fff;
-  background: #202020;
-  width: 37px;
-  height: 37px;
-  padding: 10px;
-  border-radius: 50%;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
-  .fa-github:hover {
-    background-color: #3a3a3a; }
-
-.section-icon {
-  width: 66px;
-  height: auto;
-  padding: 10px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
-
-@media screen and (min-width: 57px) {
-  .myPageContainer {
-    width: 100%; }
-
-  .profile-image-circle {
-    display: block; }
-
-  .profile-image {
-    display: none; } }
-@media (min-width: 768px) {
-  .myPageContainer {
-    width: 720px; }
-
-  .profile-image-circle {
-    display: none; }
-
-  .profile-image {
-    display: block; } }
-@media (min-width: 992px) {
-  .myPageContainer {
-    width: 940px; } }
-.button-floating {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  padding: 0;
-  border-radius: 50%;
-  transition: 0.3s;
-  cursor: pointer; }
-
-.social {
-  vertical-align: middle;
-  text-align: center;
-  margin: 5px; }
-
-.circle {
-  width: 50px;
-  height: 50px;
-  background-color: #1d1e1f; }
-
-.circle-icon-facebook {
-  background: #394AAB;
-  width: 37px;
-  height: 37px;
-  padding: 10px;
-  border-radius: 50%;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
-  .circle-icon-facebook:hover {
-    background-color: #5263c5; }
-
-.social-icons {
-  display: inline-block; }
-  .social-icons a {
-    text-decoration: none; }
-
-.button-green {
-  background-color: #06A763;
-  width: 173px;
-  margin: 7px;
-  text-align: center;
-  color: white;
-  font-family: "Muli", sans-serif;
-  font-size: 15px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #F4F4F4; }
-
-h4, h6 {
-  font-family: "Raleway", sans-serif; }
-
-div.row {
-  margin: 0; }
-
-.fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased; }
-
-a, p, li {
-  font-weight: 400; }
-
-.card-shadow {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
-
-.section-text {
-  font-weight: 900;
-  font-size: 2rem;
-  line-height: 110%;
-  font-family: "Raleway", sans-serif;
-  color: #585858; }
-
-.myPageContainer {
-  width: 970px;
-  height: auto;
-  display: block;
-  margin: auto; }
-
-.fast-me-container {
-  margin-top: -200px;
-  background-color: #159E5C; }
-
-.about-me-container {
-  margin-top: 55px;
-  background-color: #fff; }
-
-.education-container {
-  margin-top: 55px; }
-
-.skills-container {
-  margin-top: 55px; }
-
-.interest-container {
-  margin-top: 55px; }
-
-.blog-container {
-  margin-top: 55px; }
-
-.contact-container {
-  margin-top: 55px; }
-
-@media (min-width: 57px) {
-  .myPageContainer {
-    width: 100%; } }
-@media (min-width: 768px) {
-  .myPageContainer {
-    width: 720px; } }
-@media (min-width: 992px) {
-  .myPageContainer {
-    width: 940px; } }
-.my-info-content {
-  padding: 40px;
-  width: auto; }
-
-.title-main-text {
-  font-weight: 900;
-  font-size: 33px; }
-
-.title-second-main-text {
-  font-weight: 300;
-  font-size: 19px;
-  margin-top: -5px;
-  margin-bottom: 30px; }
-
-.profile-list {
-  list-style-type: none;
-  padding-left: 0;
-  display: inline-block;
-  margin: auto; }
-
-.infos .profile-list .title .fa-skype {
-  font-size: 23px;
-  padding-left: 2px;
-  padding-right: 2px; }
-
-.infos {
-  color: #fff;
-  font-family: "Muli", sans-serif; }
-  .infos .title {
-    margin-right: 5px; }
-
-.profile-image-content {
-  overflow: hidden;
-  padding: 0; }
-
-.social-icons {
-  margin-top: 12px; }
-
-@media screen and (min-width: 57px) {
-  .title-main-text, .title-second-main-text {
-    text-align: center; }
-
-  .social-icons {
-    display: block;
-    text-align: center; }
-
-  .infos {
-    text-align: center; }
-
-  .my-info-content {
-    padding-right: 40px; } }
-@media (min-width: 768px) {
-  .title-main-text, .title-second-main-text {
-    text-align: left; }
-
-  .social-icons {
-    display: block;
-    text-align: left; }
-
-  .infos {
-    text-align: left; }
-
-  .my-info-content {
-    padding-right: 0; }
-
-  .profile-image-content {
-    margin: 0; } }
-@media (min-width: 992px) {
-  .my-info-content {
-    padding-right: 40px; }
-
-  .profile-image-content {
-    padding-left: 15px; } }
-.card-content {
-  padding: 40px; }
-
-.text-about-me {
-  color: #757575;
-  text-align: center;
-  line-height: 1.3rem;
-  margin: 0; }
-
-.card-cv {
-  padding: 20px;
-  border-top: 1px solid #EAEAEA; }
-
-.button-group-green {
-  text-align: center; }
-
-.timeline-dot {
-  visibility: visible;
-  -webkit-transform: translateY(0) scale(1);
-  opacity: 1;
-  transform: translateY(0) scale(1);
-  opacity: 1;
-  -webkit-transition: -webkit-transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
-  transition: transform 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; }
-
-.skills-content {
-  background-color: #159E5C; }
-
-.progress {
-  background-color: #12874f; }
-
-.progress-bar {
-  height: 4px;
-  background-color: #fff; }
-
-.skill-text {
-  font-weight: 500;
-  font-size: 1.4rem;
-  margin: 10px 0 10px; }
-
-.skill-name {
-  padding: 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  color: #fff; }
-
-.skill-percent {
-  padding: 0;
-  font-family: "Muli", sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  color: #fff; }
-
-.skill-bars {
-  padding: 10px 0 10px; }
-
-.skill-col {
-  padding: 10px 0; }
-
-.skills-content {
-  margin-top: 20px;
-  padding: 30px 30px; }
-
-.interest-content {
-  margin-top: 23px;
-  background-color: #fff; }
-
-.item {
-  padding: 0; }
-
-.interest-item-content {
-  display: inline;
-  vertical-align: middle; }
-
-.white-item, .green-item {
-  height: 105px;
-  width: 100%;
-  text-align: center;
-  display: inline-block;
-  vertical-align: middle; }
-  .white-item .fa, .green-item .fa {
-    color: #159E5C;
-    font-size: 33px;
-    margin-top: 29px; }
-  .white-item p, .green-item p {
-    color: #159E5C;
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    margin: 0; }
-
-.green-item {
-  background-color: #159E5C; }
-  .green-item .fa {
-    color: #fff; }
-  .green-item p {
-    color: #fff; }
-
-.interest-description {
-  border-top: 1px solid #EAEAEA; }
-
-.header-background {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 370px;
-  background-image: url("http://dev.nejcribic.com/web/assets/background-book.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed; }
-
-div#map {
-  width: 100%;
-  height: 417px;
-  background-color: gray; }
-
-.google-map {
-  padding: 0;
-  padding-left: 15px; }
-
-.contact-form {
-  padding-left: 20px; }
-
-/*# sourceMappingURL=app.css.map */
+/*
+Error: File to import not found or unreadable: compass.
+       Load path: /mnt/c/Users/Nejc/WebstormProjects/MyPage/sass
+        on line 1 of sass/layout/_contact-layout.sass
+        from line 9 of sass/layout/_layout-dir.sass
+        from line 8 of sass/app.sass
+
+1: @import "variables"
+2: @import "mixins2"
+3: @import "extends"
+4: @import "separators"
+5: 
+6: @import "modules/modules-dir"
+
+Backtrace:
+sass/layout/_contact-layout.sass:1
+sass/layout/_layout-dir.sass:9
+sass/app.sass:8
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/import_node.rb:45:in `import'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/import_node.rb:28:in `imported_file'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/import_node.rb:37:in `css_import?'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:329:in `map'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:88:in `block in with_import'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:88:in `with_import'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:329:in `map'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:88:in `block in with_import'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:88:in `with_import'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:36:in `css_tree'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/var/lib/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: compass.\A        Load path: /mnt/c/Users/Nejc/WebstormProjects/MyPage/sass\A         on line 1 of sass/layout/_contact-layout.sass\A         from line 9 of sass/layout/_layout-dir.sass\A         from line 8 of sass/app.sass\A \A 1: @import \"variables\"\A 2: @import \"mixins2\"\A 3: @import \"extends\"\A 4: @import \"separators\"\A 5: \A 6: @import \"modules/modules-dir\""; }
