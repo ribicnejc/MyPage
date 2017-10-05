@@ -309,10 +309,11 @@ label.text-area {
   display: block;
   letter-spacing: 0;
   padding-top: 20px;
+  height: 150px;
   text-align: left;
   font-family: "Muli", sans-serif;
 }
-/* line 54, ../sass/modules/_forms.sass */
+/* line 55, ../sass/modules/_forms.sass */
 label.text-area .label-text {
   color: #898989;
   cursor: text;
@@ -320,17 +321,18 @@ label.text-area .label-text {
   line-height: 1rem;
   padding-bottom: 50px;
   text-transform: capitalize;
-  -moz-transform: translateY(-84px);
-  -ms-transform: translateY(-84px);
-  -webkit-transform: translateY(-84px);
-  transform: translateY(-84px);
+  -moz-transform: translateY(-134px);
+  -ms-transform: translateY(-134px);
+  -webkit-transform: translateY(-134px);
+  transform: translateY(-134px);
   transition: all 0.3s;
 }
-/* line 64, ../sass/modules/_forms.sass */
+/* line 65, ../sass/modules/_forms.sass */
 label.text-area textarea {
   background-color: transparent;
   border: 0;
-  height: 80px;
+  resize: none;
+  height: 130px;
   border-bottom: 1px solid #898989;
   color: #898989;
   font-size: 1rem;
@@ -341,28 +343,28 @@ label.text-area textarea {
   transition: all 0.3s;
   width: 100%;
 }
-/* line 78, ../sass/modules/_forms.sass */
+/* line 80, ../sass/modules/_forms.sass */
 label.text-area textarea:focus {
   max-width: 100%;
   width: 100%;
   border-bottom: 2px solid #1E6ECA;
 }
-/* line 83, ../sass/modules/_forms.sass */
+/* line 85, ../sass/modules/_forms.sass */
 label.text-area textarea:focus + .label-text {
   color: #1E6ECA;
   font-size: 11px;
-  -moz-transform: translateY(-114px);
-  -ms-transform: translateY(-114px);
-  -webkit-transform: translateY(-114px);
-  transform: translateY(-114px);
+  -moz-transform: translateY(-164px);
+  -ms-transform: translateY(-164px);
+  -webkit-transform: translateY(-164px);
+  transform: translateY(-164px);
 }
-/* line 88, ../sass/modules/_forms.sass */
+/* line 90, ../sass/modules/_forms.sass */
 label.text-area textarea:valid + .label-text {
   font-size: 13px;
-  -moz-transform: translateY(-114px);
-  -ms-transform: translateY(-114px);
-  -webkit-transform: translateY(-114px);
-  transform: translateY(-114px);
+  -moz-transform: translateY(-164px);
+  -ms-transform: translateY(-164px);
+  -webkit-transform: translateY(-164px);
+  transform: translateY(-164px);
 }
 
 /* line 1, ../sass/base/_base.sass */
@@ -407,6 +409,16 @@ a, p, li {
   font-size: 2rem;
   line-height: 110%;
   font-family: "Raleway", sans-serif;
+  color: #585858;
+}
+
+/* line 36, ../sass/base/_base.sass */
+footer {
+  padding: 20px;
+}
+/* line 38, ../sass/base/_base.sass */
+footer p {
+  margin: 0;
   color: #585858;
 }
 
@@ -753,42 +765,79 @@ a, p, li {
 /* line 1, ../sass/layout/_contact-layout.sass */
 div#map {
   width: 100%;
-  height: 417px;
+  height: 100%;
+  min-height: 417px;
   background-color: gray;
 }
 
-/* line 6, ../sass/layout/_contact-layout.sass */
+/* line 7, ../sass/layout/_contact-layout.sass */
 .google-map {
   padding: 0;
   padding-left: 15px;
 }
 
-/* line 10, ../sass/layout/_contact-layout.sass */
+/* line 11, ../sass/layout/_contact-layout.sass */
 .contact-inputs {
   padding-left: 0;
 }
 
-/* line 13, ../sass/layout/_contact-layout.sass */
+/* line 14, ../sass/layout/_contact-layout.sass */
 .form-content {
   height: 100%;
 }
 
-/* line 16, ../sass/layout/_contact-layout.sass */
+/* line 17, ../sass/layout/_contact-layout.sass */
 .contact-form {
   padding: 40px;
 }
 
-/* line 19, ../sass/layout/_contact-layout.sass */
+/* line 20, ../sass/layout/_contact-layout.sass */
 .form-content {
   background-color: #fff;
 }
 
-/* line 22, ../sass/layout/_contact-layout.sass */
+/* line 23, ../sass/layout/_contact-layout.sass */
 .contact-content {
   margin-top: 20px;
 }
-/* line 25, ../sass/layout/_contact-layout.sass */
+/* line 26, ../sass/layout/_contact-layout.sass */
 .contact-content .button-green {
   margin: 0;
   margin-top: 30px;
+}
+
+@media (min-width: 57px) {
+  /* line 35, ../sass/layout/_contact-layout.sass */
+  .google-map {
+    padding: 0;
+  }
+
+  /* line 38, ../sass/layout/_contact-layout.sass */
+  .contact-inputs {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  /* line 44, ../sass/layout/_contact-layout.sass */
+  .google-map {
+    padding-left: 0;
+    padding-top: 15px;
+  }
+
+  /* line 48, ../sass/layout/_contact-layout.sass */
+  .contact-inputs {
+    padding-right: 0;
+  }
+}
+@media (min-width: 992px) {
+  /* line 53, ../sass/layout/_contact-layout.sass */
+  .google-map {
+    padding-left: 15px;
+    padding-top: 0;
+  }
+
+  /* line 57, ../sass/layout/_contact-layout.sass */
+  .contact-inputs {
+    padding-right: 15px;
+  }
 }

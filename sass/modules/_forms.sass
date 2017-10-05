@@ -48,6 +48,7 @@ label.text-area
   display: block
   letter-spacing: 0
   padding-top: 20px
+  height: 150px
   text-align: left
   font-family: $font-family-muli
 
@@ -58,13 +59,14 @@ label.text-area
     line-height: 1rem
     padding-bottom: 50px
     text-transform: capitalize
-    +transform(translateY(-84px))
+    +transform(translateY(-134px))
     transition: all 0.3s
 
   textarea
     background-color: transparent
     border: 0
-    height: 80px
+    resize: none
+    height: 130px
     border-bottom: 1px solid $color-font-gray3
     color: $color-font-gray3
     font-size: 1rem
@@ -83,8 +85,8 @@ label.text-area
       & + .label-text
         color: $color-primary-blue
         font-size: 11px
-        +transform(translateY(-114px))
+        +transform(translateY(-164px))
 
     &:valid + .label-text
       font-size: 13px
-      +transform(translateY(-114px))
+      +transform(translateY(-164px))
