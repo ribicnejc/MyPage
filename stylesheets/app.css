@@ -625,6 +625,13 @@ footer p {
   text-align: center;
 }
 
+/* line 17, ../sass/layout/_about-me-layout.sass */
+.download-form {
+  width: 150px;
+  margin: 0;
+  padding: 0;
+}
+
 /* line 1, ../sass/layout/_education-layout.sass */
 .timeline-dot {
   visibility: visible;
