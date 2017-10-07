@@ -10,3 +10,10 @@ function initMap() {
         map: map
     });
 }
+
+// var h = document.getElementById('timeline-education').style.height;
+//
+// console.log(h);
+// document.getElementById("verticalLine").style.height = h;
+// alert(h);
+// line.style.height = "500px";
