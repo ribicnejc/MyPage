@@ -486,20 +486,25 @@ footer p {
   margin-top: 55px;
 }
 
+/* line 33, ../sass/layout/_container.sass */
+.experience-container {
+  margin-top: 55px;
+}
+
 @media (min-width: 57px) {
-  /* line 37, ../sass/layout/_container.sass */
+  /* line 40, ../sass/layout/_container.sass */
   .myPageContainer {
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  /* line 42, ../sass/layout/_container.sass */
+  /* line 45, ../sass/layout/_container.sass */
   .myPageContainer {
     width: 720px;
   }
 }
 @media (min-width: 992px) {
-  /* line 47, ../sass/layout/_container.sass */
+  /* line 50, ../sass/layout/_container.sass */
   .myPageContainer {
     width: 940px;
   }
@@ -705,7 +710,7 @@ footer p {
 }
 
 /* line 35, ../sass/layout/_education-layout.sass */
-#timeline-education {
+.timeline-education {
   margin-top: -30px;
 }
 
@@ -972,33 +977,35 @@ div#map {
   /* line 35, ../sass/layout/_contact-layout.sass */
   .google-map {
     padding: 0;
+    margin-top: 15px;
   }
 
-  /* line 38, ../sass/layout/_contact-layout.sass */
+  /* line 39, ../sass/layout/_contact-layout.sass */
   .contact-inputs {
     padding: 0;
   }
 }
 @media (min-width: 768px) {
-  /* line 44, ../sass/layout/_contact-layout.sass */
+  /* line 45, ../sass/layout/_contact-layout.sass */
   .google-map {
     padding-left: 0;
     padding-top: 15px;
+    margin-top: 0;
   }
 
-  /* line 48, ../sass/layout/_contact-layout.sass */
+  /* line 50, ../sass/layout/_contact-layout.sass */
   .contact-inputs {
     padding-right: 0;
   }
 }
 @media (min-width: 992px) {
-  /* line 53, ../sass/layout/_contact-layout.sass */
+  /* line 55, ../sass/layout/_contact-layout.sass */
   .google-map {
     padding-left: 15px;
     padding-top: 0;
   }
 
-  /* line 57, ../sass/layout/_contact-layout.sass */
+  /* line 59, ../sass/layout/_contact-layout.sass */
   .contact-inputs {
     padding-right: 15px;
   }
