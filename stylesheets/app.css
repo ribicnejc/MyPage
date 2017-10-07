@@ -95,7 +95,7 @@
 /* line 38, ../sass/modules/_images.sass */
 .fa-instagram {
   color: #fff;
-  background: #285378;
+  background: #125688;
   width: 37px;
   height: 37px;
   padding: 10px;
@@ -104,7 +104,7 @@
 }
 /* line 10, ../sass/_mixins2.sass */
 .fa-instagram:hover {
-  background-color: #356d9e;
+  background-color: #1872b5;
 }
 
 /* line 42, ../sass/modules/_images.sass */
@@ -185,7 +185,7 @@
     width: 940px;
   }
 }
-/* line 1, ../sass/modules/_buttons.sass */
+/* line 3, ../sass/modules/_buttons.sass */
 .button-floating {
   position: relative;
   overflow: hidden;
@@ -196,21 +196,21 @@
   cursor: pointer;
 }
 
-/* line 12, ../sass/modules/_buttons.sass */
+/* line 14, ../sass/modules/_buttons.sass */
 .social {
   vertical-align: middle;
   text-align: center;
   margin: 5px;
 }
 
-/* line 19, ../sass/modules/_buttons.sass */
+/* line 21, ../sass/modules/_buttons.sass */
 .circle {
   width: 50px;
   height: 50px;
   background-color: #1d1e1f;
 }
 
-/* line 24, ../sass/modules/_buttons.sass */
+/* line 26, ../sass/modules/_buttons.sass */
 .circle-icon-facebook {
   background: #394AAB;
   width: 37px;
@@ -224,16 +224,16 @@
   background-color: #5263c5;
 }
 
-/* line 28, ../sass/modules/_buttons.sass */
+/* line 30, ../sass/modules/_buttons.sass */
 .social-icons {
   display: inline-block;
 }
-/* line 30, ../sass/modules/_buttons.sass */
+/* line 32, ../sass/modules/_buttons.sass */
 .social-icons a {
   text-decoration: none;
 }
 
-/* line 34, ../sass/modules/_buttons.sass */
+/* line 36, ../sass/modules/_buttons.sass */
 .button-green {
   background-color: #06A763;
   width: 173px;
@@ -589,14 +589,19 @@ footer p {
   .profile-image-content {
     margin: 0;
   }
+
+  /* line 68, ../sass/layout/_main-info-layout.sass */
+  .profile-image {
+    height: 100%;
+  }
 }
 @media (min-width: 992px) {
-  /* line 71, ../sass/layout/_main-info-layout.sass */
+  /* line 72, ../sass/layout/_main-info-layout.sass */
   .my-info-content {
     padding-right: 40px;
   }
 
-  /* line 73, ../sass/layout/_main-info-layout.sass */
+  /* line 74, ../sass/layout/_main-info-layout.sass */
   .profile-image-content {
     padding-left: 15px;
   }
