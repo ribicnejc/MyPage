@@ -386,6 +386,15 @@ label.text-area textarea:valid + .label-text {
   transform: translateY(-164px);
 }
 
+/* line 1, ../sass/modules/_animations.sass */
+.raise-element:hover,
+.raise-element:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em #757575;
+  transform: translateY(-0.25em);
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
 /* line 1, ../sass/base/_base.sass */
 body {
   margin: 0;
