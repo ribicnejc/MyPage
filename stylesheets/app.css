@@ -746,7 +746,7 @@ footer p {
 .vertical-line {
   position: absolute;
   width: 5px;
-  height: 400px;
+  height: 460px;
   z-index: -1;
   left: 50%;
   margin-top: 50px;
@@ -778,29 +778,44 @@ footer p {
     margin-left: auto;
     margin-right: 0;
   }
+
+  /* line 89, ../sass/layout/_education-layout.sass */
+  .vertical-line {
+    height: 800px;
+  }
 }
 @media (min-width: 768px) {
-  /* line 92, ../sass/layout/_education-layout.sass */
+  /* line 95, ../sass/layout/_education-layout.sass */
   .timeline-content {
     width: 315px;
   }
 
-  /* line 95, ../sass/layout/_education-layout.sass */
+  /* line 98, ../sass/layout/_education-layout.sass */
   .margin-top {
     top: -9rem;
     margin-bottom: -9rem;
     margin-top: 0;
   }
 
-  /* line 100, ../sass/layout/_education-layout.sass */
+  /* line 103, ../sass/layout/_education-layout.sass */
   .education-letter {
     margin: auto;
   }
+
+  /* line 106, ../sass/layout/_education-layout.sass */
+  .vertical-line {
+    height: 600px;
+  }
 }
 @media (min-width: 992px) {
-  /* line 105, ../sass/layout/_education-layout.sass */
+  /* line 111, ../sass/layout/_education-layout.sass */
   .timeline-content {
     width: 410px;
+  }
+
+  /* line 114, ../sass/layout/_education-layout.sass */
+  .vertical-line {
+    height: 460px;
   }
 }
 /* line 1, ../sass/layout/_skill-layout.sass */
@@ -1008,5 +1023,34 @@ div#map {
   /* line 59, ../sass/layout/_contact-layout.sass */
   .contact-inputs {
     padding-right: 15px;
+  }
+}
+/* line 1, ../sass/layout/_experience-layout.sass */
+.vertical-line-ex {
+  position: absolute;
+  width: 5px;
+  height: 460px;
+  z-index: -1;
+  left: 50%;
+  margin-top: 50px;
+  background-color: #9AD1B7;
+}
+
+@media screen and (min-width: 57px) {
+  /* line 14, ../sass/layout/_experience-layout.sass */
+  .vertical-line-ex {
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 20, ../sass/layout/_experience-layout.sass */
+  .vertical-line-ex {
+    height: 200px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 25, ../sass/layout/_experience-layout.sass */
+  .vertical-line-ex {
+    height: 150px;
   }
 }

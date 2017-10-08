@@ -1,0 +1,26 @@
+.vertical-line-ex
+  position: absolute
+  width: 5px
+  height: 460px
+  z-index: -1
+  left: 50%
+  margin-top: 50px
+  background-color: $color-green-separator
+
+
+
+//Small break point
+@media screen and (min-width: 57px)
+  .vertical-line-ex
+    height: 300px
+
+
+//Medium break point
+@media (min-width: 768px)
+  .vertical-line-ex
+    height: 200px
+
+//Large break point
+@media (min-width: 992px)
+  .vertical-line-ex
+    height: 150px
