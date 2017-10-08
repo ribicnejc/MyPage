@@ -26,7 +26,11 @@
     <link rel="stylesheet" href="stylesheets/app.css">
 
     <!--Icons-->
-    <link rel="shortcut icon" href="assets/NRLogo.ico"/>
+    <link rel="shortcut icon" href="assets/NR.ico"/>
+
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="javascript/jQuery/jquery-3.2.1.min.js"></script>
 </head>
 
 <body>
@@ -146,7 +150,7 @@
                         <a href="assets/CV%20Nejc%20Ribic.docx" download="CV Nejc Ribic">
                             <button class="btn button-green">DOWNLOAD CV</button>
                         </a>
-                        <button class="btn button-green">CONTACT ME</button>
+                        <button onclick="scrollToContact()" class="btn button-green">CONTACT ME</button>
                     </div>
                 </div>
             </div>
@@ -180,20 +184,20 @@
                         <div class="timeline-content shadow-card block-to-left">
                             <div class="card-content-education">
                                 <!-- TIMELINE TITLE -->
-                                <h6 class="timeline-title">Preparatory Education</h6>
+                                <h6 class="timeline-title">Primary School</h6>
                                 <!-- TIMELINE TITLE INFO -->
                                 <div class="timeline-info">
                                     <h6>
-                                        <small>Fedrick School</small>
+                                        <small>OŠ Simona Jenka</small>
                                     </h6>
                                     <h6>
-                                        <small>Jan 1997 - Mar 2000</small>
+                                        <small>Sep 2002 - Jun 2010</small>
                                     </h6>
                                 </div>
                                 <!-- TIMELINE PARAGRAPH -->
                                 <p>
-                                    I completed my preparatory education from this prestigious institution.
-                                    I successful completed all the credits without any fallout and got A grade overall.
+                                    I completed my primary school successfully, and got all the credits without
+                                    any fallout and got B grade overall.
                                 </p>
                                 <!-- BUTTON TRIGGER MODAL -->
                                 <a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-1">
@@ -206,27 +210,27 @@
                     <div class="timeline-block margin-top">
                         <!-- DOT -->
                         <div class="green-cirlce-letter">
-                            <div class="timeline-dot education-letter"><h6>P</h6></div>
+                            <div class="timeline-dot education-letter"><h6>H</h6></div>
                         </div>
                         <div class="horizontal-line-right"></div>
                         <!-- TIMELINE CONTENT -->
                         <div class="timeline-content shadow-card block-to-right">
                             <div class="card-content-education">
                                 <!-- TIMELINE TITLE -->
-                                <h6 class="timeline-title">Preparatory Education</h6>
+                                <h6 class="timeline-title">High School, Computer Technician</h6>
                                 <!-- TIMELINE TITLE INFO -->
                                 <div class="timeline-info">
                                     <h6>
-                                        <small>Fedrick School</small>
+                                        <small>Elektrotehniška-računalniška strokovna šola in gimnazija Ljubljana</small>
                                     </h6>
                                     <h6>
-                                        <small>Jan 1997 - Mar 2000</small>
+                                        <small>Sep 2010 - May 2014</small>
                                     </h6>
                                 </div>
                                 <!-- TIMELINE PARAGRAPH -->
                                 <p>
-                                    I completed my preparatory education from this prestigious institution.
-                                    I successful completed all the credits without any fallout and got A grade overall.
+                                    I graduated this high school without any fallout, and with all necessary credits.
+                                    Meanwhile I got CISCO certificate for CCNA Exploration: Network Fundamentals.
                                 </p>
                                 <!-- BUTTON TRIGGER MODAL -->
                                 <a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-1">
@@ -239,27 +243,27 @@
                     <div class="timeline-block margin-top">
                         <!-- DOT -->
                         <div class="green-cirlce-letter">
-                            <div class="timeline-dot education-letter"><h6>P</h6></div>
+                            <div class="timeline-dot education-letter"><h6>C</h6></div>
                         </div>
                         <div class="horizontal-line-left"></div>
                         <!-- TIMELINE CONTENT -->
                         <div class="timeline-content shadow-card block-to-left">
                             <div class="card-content-education">
                                 <!-- TIMELINE TITLE -->
-                                <h6 class="timeline-title">Preparatory Education</h6>
+                                <h6 class="timeline-title">College, Electrical Engineering</h6>
                                 <!-- TIMELINE TITLE INFO -->
                                 <div class="timeline-info">
                                     <h6>
-                                        <small>Fedrick School</small>
+                                        <small>Fakulteta za elektrotehniko</small>
                                     </h6>
                                     <h6>
-                                        <small>Jan 1997 - Mar 2000</small>
+                                        <small>Oct 2014 - May 2015</small>
                                     </h6>
                                 </div>
                                 <!-- TIMELINE PARAGRAPH -->
                                 <p>
-                                    I completed my preparatory education from this prestigious institution.
-                                    I successful completed all the credits without any fallout and got A grade overall.
+                                    I was visiting this college, for one semester until I realized this is not my passion.
+                                    So I completed few classes which then helped me with computer engineering college.
                                 </p>
                                 <!-- BUTTON TRIGGER MODAL -->
                                 <a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-1">
@@ -272,60 +276,26 @@
                     <div class="timeline-block margin-top">
                         <!-- DOT -->
                         <div class="green-cirlce-letter">
-                            <div class="timeline-dot education-letter"><h6>P</h6></div>
+                            <div class="timeline-dot education-letter"><h6>C</h6></div>
                         </div>
                         <div class="horizontal-line-right"></div>
                         <!-- TIMELINE CONTENT -->
                         <div class="timeline-content shadow-card block-to-right">
                             <div class="card-content-education">
                                 <!-- TIMELINE TITLE -->
-                                <h6 class="timeline-title">Preparatory Education</h6>
+                                <h6 class="timeline-title">College, Computer Engineering</h6>
                                 <!-- TIMELINE TITLE INFO -->
                                 <div class="timeline-info">
                                     <h6>
-                                        <small>Fedrick School</small>
+                                        <small>Fakulteta za računalništvo in informatiko</small>
                                     </h6>
                                     <h6>
-                                        <small>Jan 1997 - Mar 2000</small>
+                                        <small>Oct 2015 - Present</small>
                                     </h6>
                                 </div>
                                 <!-- TIMELINE PARAGRAPH -->
                                 <p>
-                                    I completed my preparatory education from this prestigious institution.
-                                    I successful completed all the credits without any fallout and got A grade overall.
-                                </p>
-                                <!-- BUTTON TRIGGER MODAL -->
-                                <a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-1">
-                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="timeline-block margin-top">
-                        <!-- DOT -->
-                        <div class="green-cirlce-letter">
-                            <div class="timeline-dot education-letter"><h6>P</h6></div>
-                        </div>
-                        <div class="horizontal-line-left"></div>
-                        <!-- TIMELINE CONTENT -->
-                        <div class="timeline-content shadow-card block-to-left">
-                            <div class="card-content-education">
-                                <!-- TIMELINE TITLE -->
-                                <h6 class="timeline-title">Preparatory Education</h6>
-                                <!-- TIMELINE TITLE INFO -->
-                                <div class="timeline-info">
-                                    <h6>
-                                        <small>Fedrick School</small>
-                                    </h6>
-                                    <h6>
-                                        <small>Jan 1997 - Mar 2000</small>
-                                    </h6>
-                                </div>
-                                <!-- TIMELINE PARAGRAPH -->
-                                <p>
-                                    I completed my preparatory education from this prestigious institution.
-                                    I successful completed all the credits without any fallout and got A grade overall.
+                                    I'm now attending this college.<br> Currently visiting Senior year.
                                 </p>
                                 <!-- BUTTON TRIGGER MODAL -->
                                 <a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-1">
@@ -514,7 +484,7 @@
                 <!-- SECTION TITLE -->
                 <div class="section-title">
                     <h4 class="text-uppercase text-center section-text"><img class="img-fluid section-icon"
-                                                                             src="assets/layers.png" alt="Layers icon">Education
+                                                                             src="assets/layers.png" alt="Layers icon">Experience
                     </h4>
                 </div>
                 <div class="vertical-line"></div>
@@ -531,20 +501,20 @@
                         <div class="timeline-content shadow-card block-to-left">
                             <div class="card-content-education">
                                 <!-- TIMELINE TITLE -->
-                                <h6 class="timeline-title">Preparatory Education</h6>
+                                <h6 class="timeline-title">Povio Labs</h6>
                                 <!-- TIMELINE TITLE INFO -->
                                 <div class="timeline-info">
                                     <h6>
-                                        <small>Fedrick School</small>
+                                        <small>Intern</small>
                                     </h6>
                                     <h6>
-                                        <small>Jan 1997 - Mar 2000</small>
+                                        <small>Apr 2016 - Jun 2017</small>
                                     </h6>
                                 </div>
                                 <!-- TIMELINE PARAGRAPH -->
                                 <p>
-                                    I completed my preparatory education from this prestigious institution.
-                                    I successful completed all the credits without any fallout and got A grade overall.
+                                    Povio Labs is start up business which market is outsourcing, making software for other business partners.
+                                    At that time, when I was working there, I was QA, and Android developer.
                                 </p>
                                 <!-- BUTTON TRIGGER MODAL -->
                                 <a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-1">
@@ -557,27 +527,27 @@
                     <div class="timeline-block margin-top">
                         <!-- DOT -->
                         <div class="green-cirlce-letter">
-                            <div class="timeline-dot education-letter"><h6>P</h6></div>
+                            <div class="timeline-dot education-letter"><h6>B</h6></div>
                         </div>
                         <div class="horizontal-line-right"></div>
                         <!-- TIMELINE CONTENT -->
                         <div class="timeline-content shadow-card block-to-right">
                             <div class="card-content-education">
                                 <!-- TIMELINE TITLE -->
-                                <h6 class="timeline-title">Preparatory Education</h6>
+                                <h6 class="timeline-title">Beenius</h6>
                                 <!-- TIMELINE TITLE INFO -->
                                 <div class="timeline-info">
                                     <h6>
-                                        <small>Fedrick School</small>
+                                        <small>Android Developer</small>
                                     </h6>
                                     <h6>
-                                        <small>Jan 1997 - Mar 2000</small>
+                                        <small>Jun 2017 - Present</small>
                                     </h6>
                                 </div>
                                 <!-- TIMELINE PARAGRAPH -->
                                 <p>
-                                    I completed my preparatory education from this prestigious institution.
-                                    I successful completed all the credits without any fallout and got A grade overall.
+                                    I started working there after my second year of college, for summer holidays. Currently
+                                    I am visiting my last year of college, and working partly remote.
                                 </p>
                                 <!-- BUTTON TRIGGER MODAL -->
                                 <a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-1">
@@ -587,104 +557,38 @@
                         </div>
                     </div>
 
-                    <div class="timeline-block margin-top">
-                        <!-- DOT -->
-                        <div class="green-cirlce-letter">
-                            <div class="timeline-dot education-letter"><h6>P</h6></div>
-                        </div>
-                        <div class="horizontal-line-left"></div>
-                        <!-- TIMELINE CONTENT -->
-                        <div class="timeline-content shadow-card block-to-left">
-                            <div class="card-content-education">
-                                <!-- TIMELINE TITLE -->
-                                <h6 class="timeline-title">Preparatory Education</h6>
-                                <!-- TIMELINE TITLE INFO -->
-                                <div class="timeline-info">
-                                    <h6>
-                                        <small>Fedrick School</small>
-                                    </h6>
-                                    <h6>
-                                        <small>Jan 1997 - Mar 2000</small>
-                                    </h6>
-                                </div>
-                                <!-- TIMELINE PARAGRAPH -->
-                                <p>
-                                    I completed my preparatory education from this prestigious institution.
-                                    I successful completed all the credits without any fallout and got A grade overall.
-                                </p>
-                                <!-- BUTTON TRIGGER MODAL -->
-                                <a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-1">
-                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="timeline-block margin-top">
-                        <!-- DOT -->
-                        <div class="green-cirlce-letter">
-                            <div class="timeline-dot education-letter"><h6>P</h6></div>
-                        </div>
-                        <div class="horizontal-line-right"></div>
-                        <!-- TIMELINE CONTENT -->
-                        <div class="timeline-content shadow-card block-to-right">
-                            <div class="card-content-education">
-                                <!-- TIMELINE TITLE -->
-                                <h6 class="timeline-title">Preparatory Education</h6>
-                                <!-- TIMELINE TITLE INFO -->
-                                <div class="timeline-info">
-                                    <h6>
-                                        <small>Fedrick School</small>
-                                    </h6>
-                                    <h6>
-                                        <small>Jan 1997 - Mar 2000</small>
-                                    </h6>
-                                </div>
-                                <!-- TIMELINE PARAGRAPH -->
-                                <p>
-                                    I completed my preparatory education from this prestigious institution.
-                                    I successful completed all the credits without any fallout and got A grade overall.
-                                </p>
-                                <!-- BUTTON TRIGGER MODAL -->
-                                <a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-1">
-                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="timeline-block margin-top">
-                        <!-- DOT -->
-                        <div class="green-cirlce-letter">
-                            <div class="timeline-dot education-letter"><h6>P</h6></div>
-                        </div>
-                        <div class="horizontal-line-left"></div>
-                        <!-- TIMELINE CONTENT -->
-                        <div class="timeline-content shadow-card block-to-left">
-                            <div class="card-content-education">
-                                <!-- TIMELINE TITLE -->
-                                <h6 class="timeline-title">Preparatory Education</h6>
-                                <!-- TIMELINE TITLE INFO -->
-                                <div class="timeline-info">
-                                    <h6>
-                                        <small>Fedrick School</small>
-                                    </h6>
-                                    <h6>
-                                        <small>Jan 1997 - Mar 2000</small>
-                                    </h6>
-                                </div>
-                                <!-- TIMELINE PARAGRAPH -->
-                                <p>
-                                    I completed my preparatory education from this prestigious institution.
-                                    I successful completed all the credits without any fallout and got A grade overall.
-                                </p>
-                                <!-- BUTTON TRIGGER MODAL -->
-                                <a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-1">
-                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    <!--<div class="timeline-block margin-top">-->
+                        <!--&lt;!&ndash; DOT &ndash;&gt;-->
+                        <!--<div class="green-cirlce-letter">-->
+                            <!--<div class="timeline-dot education-letter"><h6>P</h6></div>-->
+                        <!--</div>-->
+                        <!--<div class="horizontal-line-left"></div>-->
+                        <!--&lt;!&ndash; TIMELINE CONTENT &ndash;&gt;-->
+                        <!--<div class="timeline-content shadow-card block-to-left">-->
+                            <!--<div class="card-content-education">-->
+                                <!--&lt;!&ndash; TIMELINE TITLE &ndash;&gt;-->
+                                <!--<h6 class="timeline-title">Preparatory Education</h6>-->
+                                <!--&lt;!&ndash; TIMELINE TITLE INFO &ndash;&gt;-->
+                                <!--<div class="timeline-info">-->
+                                    <!--<h6>-->
+                                        <!--<small>Fedrick School</small>-->
+                                    <!--</h6>-->
+                                    <!--<h6>-->
+                                        <!--<small>Jan 1997 - Mar 2000</small>-->
+                                    <!--</h6>-->
+                                <!--</div>-->
+                                <!--&lt;!&ndash; TIMELINE PARAGRAPH &ndash;&gt;-->
+                                <!--<p>-->
+                                    <!--I completed my preparatory education from this prestigious institution.-->
+                                    <!--I successful completed all the credits without any fallout and got A grade overall.-->
+                                <!--</p>-->
+                                <!--&lt;!&ndash; BUTTON TRIGGER MODAL &ndash;&gt;-->
+                                <!--<a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-1">-->
+                                    <!--<i class="fa fa-ellipsis-h" aria-hidden="true"></i>-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
 
                 </div>
             </div>
@@ -712,15 +616,10 @@
                     <div class="">
                         <div class="row">
                             <div class="col-md-12 card-content">
-                                <p class="text-about-me">Hello! I’m John Doe. Senior Web Developer with over 13 years of
-                                    experience
-                                    specializing in front
-                                    end development. Experienced with all stages of the development cycle for dynamic
-                                    web
-                                    projects.Having an in-depth knowledge including advanced HTML5, CSS, CSS3, SASS,
-                                    LESS, JSON,
-                                    XML, Java, JavaScript, JQuery, Angular JS. Strong background in management and
-                                    leadership.</p>
+                                <p class="text-about-me">First of all I love to code, this is my passion. I'm very happy when I learn
+                                something new, for example new programming language. Also I love desing, not that I am some sort of picasso,
+                                but I'm very proud when Application not just working awesome, but also look awesome. In my free time
+                                I love taking photos and flying with my paraglider.</p>
                             </div>
                         </div>
                         <div class="row top-separator">
@@ -799,7 +698,7 @@
                         CONTACT
     ===========================================-->
     <div class="myPageContainer">
-        <section class="contact-container">
+        <section id="contact-layout" class="contact-container">
             <div class="container-fluid">
                 <!-- SECTION TITLE -->
                 <div class="section-title">
@@ -854,7 +753,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 text-center">
-                    <p>© Material CV. All right reserved by <a href="http://www.nejcribic.com">Nejc Ribič</a></p>
+                    <p>© 2017 Material CV. All right reserved by <a href="http://www.nejcribic.com">Nejc Ribič</a></p>
 
                 </div>
             </div>
