@@ -13,19 +13,8 @@ function initMap() {
     });
 }
 
-// var h = document.getElementById('timeline-education').style.height;
-//
-// console.log(h);
-// document.getElementById("verticalLine").style.height = h;
-// alert(h);
-// line.style.height = "500px";
-function scrollToContact(){
-    // $("#contact-layout").click(function() {
-
-    $('body').hide(100);
-        // $('html, body').animate({
-        //     scrollTop: $("#contact-layout").offset().top
-        // }, 2000);
-
-    // });
+function scrollToContact() {
+    $('html, body').animate({
+        scrollTop: $("#contact-layout").offset().top
+    }, 1000);
 }
