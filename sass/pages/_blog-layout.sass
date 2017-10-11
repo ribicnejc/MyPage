@@ -1,0 +1,106 @@
+.blog-page
+  .section-text
+    margin-bottom: 20px
+  .blog-container
+    margin-top: -300px
+    h4
+      color: $color-white
+
+  .blog-title
+    font-family: $font-family-raleway
+    color: $color-white
+    h2, p
+      display: inline-block
+      font-weight: 600
+    p
+      float: right
+      margin-top: 10px
+
+  .blog-title-content
+    background-color: $color-primary-green
+    padding: 20px
+
+  .white-blog-separator
+    height: 3px
+    width: 100%
+    margin-top: 10px
+    background-color: $color-white
+
+  .blog-chips
+    margin-top: 20px
+
+  .blog-padding
+    padding: 0 16px 0 0
+
+  .blog-actual-text
+    background-color: $color-white
+    padding: 20px
+    p, h3
+      font-family: $font-family-muli
+    p
+      color: $color-font-gray2
+    h3
+      color: $color-font-gray
+      font-weight: 600
+
+
+  .blog-properties
+    padding: 0 0 0 16px
+    h4
+      font-family: $font-family-raleway
+      font-weight: 600
+      padding: 15px
+      color: $color-white
+      background-color: $color-primary-green
+    p
+      font-family: $font-family-muli
+      color: $color-font-gray2
+
+    .my-blog-card
+      background-color: $color-white
+      .md-chip
+        background-color: $color-primary-blue
+
+    .my-blog-description
+      padding: 30px 15px 30px 15px
+      margin: 0
+
+  .recent-post-image
+    height: 75px
+    width: auto
+    border-radius: 50%
+
+  ul.list-unstyled
+    padding: 15px 0 15px 0
+    margin: 0
+    p
+      margin: 0
+      font-family: $font-family-muli
+    h5
+      color: $color-font-gray
+      font-family: $font-family-raleway
+      font-weight: 600
+      font-size: 17px
+
+  .category-chips
+    padding: 20px 15px 20px 15px
+
+  .my-blog-card
+    margin-bottom: 16px
+
+  //Small break point
+  @media screen and (min-width: 57px)
+    .blog-padding
+      padding: 0
+      margin-bottom: 16px
+    .blog-properties
+      padding: 0
+  //Medium break point
+  @media (min-width: 768px)
+    .blog-padding
+      padding: 0 16px 0 0
+      margin: 0
+    .blog-properties
+      padding: 0 0 0 16px
+  //Large break point
+  @media (min-width: 992px)

@@ -395,6 +395,60 @@ label.text-area textarea:valid + .label-text {
   transition-duration: 0.2s;
 }
 
+/* line 1, ../sass/modules/_chips.sass */
+.md-chip {
+  display: inline-block;
+  border-radius: 42px;
+  padding: 0;
+  height: 32px;
+  background-color: #0f7142;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+/* line 12, ../sass/modules/_chips.sass */
+.md-chip:hover {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+/* line 17, ../sass/modules/_chips.sass */
+.md-chip-img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  float: left;
+  box-shadow: 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* line 26, ../sass/modules/_chips.sass */
+.md-chip-img .md-chip-span {
+  display: block;
+  height: 32px;
+}
+
+/* line 31, ../sass/modules/_chips.sass */
+.md-chip-img img {
+  -webkit-transform: translate(-50%);
+  margin-left: 16px;
+  height: 32px;
+}
+
+/* line 37, ../sass/modules/_chips.sass */
+.md-chip-text {
+  display: inline-block;
+  font-weight: 400;
+  font-family: "Muli", sans-serif;
+  font-size: 13px;
+  text-align: center;
+  vertical-align: middle;
+  height: 42px;
+  float: left;
+  padding: 6px 12px 0 12px;
+  color: rgba(255, 255, 255, 0.87);
+}
+
 /* line 1, ../sass/base/_base.sass */
 body {
   margin: 0;
@@ -500,20 +554,25 @@ footer p {
   margin-top: 55px;
 }
 
+/* line 36, ../sass/layout/_container.sass */
+.blog-container {
+  margin-top: 55px;
+}
+
 @media (min-width: 57px) {
-  /* line 40, ../sass/layout/_container.sass */
+  /* line 43, ../sass/layout/_container.sass */
   .myPageContainer {
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  /* line 45, ../sass/layout/_container.sass */
+  /* line 48, ../sass/layout/_container.sass */
   .myPageContainer {
     width: 720px;
   }
 }
 @media (min-width: 992px) {
-  /* line 50, ../sass/layout/_container.sass */
+  /* line 53, ../sass/layout/_container.sass */
   .myPageContainer {
     width: 940px;
   }
@@ -942,94 +1001,99 @@ footer p {
 }
 
 /* line 1, ../sass/layout/_blog-layout.sass */
+.blog-content {
+  margin-top: 25px;
+}
+
+/* line 4, ../sass/layout/_blog-layout.sass */
 .blog-img {
   width: 100%;
   height: 315px;
 }
 
-/* line 5, ../sass/layout/_blog-layout.sass */
+/* line 8, ../sass/layout/_blog-layout.sass */
 .blog-img-content {
   padding: 0;
 }
 
-/* line 8, ../sass/layout/_blog-layout.sass */
+/* line 11, ../sass/layout/_blog-layout.sass */
 .breadcrumb {
   background-color: transparent;
   padding: 0 0 0px;
 }
-/* line 11, ../sass/layout/_blog-layout.sass */
+/* line 14, ../sass/layout/_blog-layout.sass */
 .breadcrumb .breadcrumb-item {
   color: #757575;
 }
 
-/* line 14, ../sass/layout/_blog-layout.sass */
+/* line 17, ../sass/layout/_blog-layout.sass */
 .blog-text-content {
   padding: 70px 40px 60px;
   background-color: #fff;
 }
-/* line 17, ../sass/layout/_blog-layout.sass */
+/* line 20, ../sass/layout/_blog-layout.sass */
 .blog-text-content h6 {
   color: #757575;
   font-size: 21px;
   font-weight: 600;
 }
-/* line 21, ../sass/layout/_blog-layout.sass */
+/* line 24, ../sass/layout/_blog-layout.sass */
 .blog-text-content p {
   text-align: left;
   padding: 0px 0 10px;
 }
 
 @media screen and (min-width: 57px) {
-  /* line 27, ../sass/layout/_blog-layout.sass */
+  /* line 30, ../sass/layout/_blog-layout.sass */
   .blog-text-content {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  /* line 31, ../sass/layout/_blog-layout.sass */
+  /* line 34, ../sass/layout/_blog-layout.sass */
   .blog-text-content h6 {
     text-align: center;
   }
-  /* line 33, ../sass/layout/_blog-layout.sass */
+  /* line 36, ../sass/layout/_blog-layout.sass */
   .blog-text-content p {
     text-align: center;
   }
-  /* line 35, ../sass/layout/_blog-layout.sass */
+  /* line 38, ../sass/layout/_blog-layout.sass */
   .blog-text-content .ancher-read-more {
     text-align: center;
     display: block;
   }
-  /* line 38, ../sass/layout/_blog-layout.sass */
+  /* line 41, ../sass/layout/_blog-layout.sass */
   .blog-text-content .breadcrumb {
     display: inline-block;
   }
 }
 @media (min-width: 768px) {
-  /* line 43, ../sass/layout/_blog-layout.sass */
+  /* line 46, ../sass/layout/_blog-layout.sass */
   .blog-text-content {
     text-align: left;
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  /* line 47, ../sass/layout/_blog-layout.sass */
+  /* line 50, ../sass/layout/_blog-layout.sass */
   .blog-text-content h6 {
     text-align: left;
   }
-  /* line 49, ../sass/layout/_blog-layout.sass */
+  /* line 52, ../sass/layout/_blog-layout.sass */
   .blog-text-content p {
     text-align: left;
   }
-  /* line 51, ../sass/layout/_blog-layout.sass */
+  /* line 54, ../sass/layout/_blog-layout.sass */
   .blog-text-content .ancher-read-more {
     text-align: left;
   }
-  /* line 53, ../sass/layout/_blog-layout.sass */
+  /* line 56, ../sass/layout/_blog-layout.sass */
   .blog-text-content .breadcrumb {
     display: inline-block;
   }
 }
 @media (min-width: 992px) {
-  /* line 58, ../sass/layout/_blog-layout.sass */
+  /* line 61, ../sass/layout/_blog-layout.sass */
   .blog-text-content {
     padding: 70px 40px 60px;
   }
@@ -1154,5 +1218,153 @@ div#map {
   /* line 25, ../sass/layout/_experience-layout.sass */
   .vertical-line-ex {
     height: 150px;
+  }
+}
+/* line 2, ../sass/pages/_blog-layout.sass */
+.blog-page .section-text {
+  margin-bottom: 20px;
+}
+/* line 4, ../sass/pages/_blog-layout.sass */
+.blog-page .blog-container {
+  margin-top: -300px;
+}
+/* line 6, ../sass/pages/_blog-layout.sass */
+.blog-page .blog-container h4 {
+  color: #fff;
+}
+/* line 9, ../sass/pages/_blog-layout.sass */
+.blog-page .blog-title {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+/* line 12, ../sass/pages/_blog-layout.sass */
+.blog-page .blog-title h2, .blog-page .blog-title p {
+  display: inline-block;
+  font-weight: 600;
+}
+/* line 15, ../sass/pages/_blog-layout.sass */
+.blog-page .blog-title p {
+  float: right;
+  margin-top: 10px;
+}
+/* line 19, ../sass/pages/_blog-layout.sass */
+.blog-page .blog-title-content {
+  background-color: #159E5C;
+  padding: 20px;
+}
+/* line 23, ../sass/pages/_blog-layout.sass */
+.blog-page .white-blog-separator {
+  height: 3px;
+  width: 100%;
+  margin-top: 10px;
+  background-color: #fff;
+}
+/* line 29, ../sass/pages/_blog-layout.sass */
+.blog-page .blog-chips {
+  margin-top: 20px;
+}
+/* line 32, ../sass/pages/_blog-layout.sass */
+.blog-page .blog-padding {
+  padding: 0 16px 0 0;
+}
+/* line 35, ../sass/pages/_blog-layout.sass */
+.blog-page .blog-actual-text {
+  background-color: #fff;
+  padding: 20px;
+}
+/* line 38, ../sass/pages/_blog-layout.sass */
+.blog-page .blog-actual-text p, .blog-page .blog-actual-text h3 {
+  font-family: "Muli", sans-serif;
+}
+/* line 40, ../sass/pages/_blog-layout.sass */
+.blog-page .blog-actual-text p {
+  color: #757575;
+}
+/* line 42, ../sass/pages/_blog-layout.sass */
+.blog-page .blog-actual-text h3 {
+  color: #585858;
+  font-weight: 600;
+}
+/* line 47, ../sass/pages/_blog-layout.sass */
+.blog-page .blog-properties {
+  padding: 0 0 0 16px;
+}
+/* line 49, ../sass/pages/_blog-layout.sass */
+.blog-page .blog-properties h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  padding: 15px;
+  color: #fff;
+  background-color: #159E5C;
+}
+/* line 55, ../sass/pages/_blog-layout.sass */
+.blog-page .blog-properties p {
+  font-family: "Muli", sans-serif;
+  color: #757575;
+}
+/* line 59, ../sass/pages/_blog-layout.sass */
+.blog-page .blog-properties .my-blog-card {
+  background-color: #fff;
+}
+/* line 61, ../sass/pages/_blog-layout.sass */
+.blog-page .blog-properties .my-blog-card .md-chip {
+  background-color: #1E6ECA;
+}
+/* line 64, ../sass/pages/_blog-layout.sass */
+.blog-page .blog-properties .my-blog-description {
+  padding: 30px 15px 30px 15px;
+  margin: 0;
+}
+/* line 68, ../sass/pages/_blog-layout.sass */
+.blog-page .recent-post-image {
+  height: 75px;
+  width: auto;
+  border-radius: 50%;
+}
+/* line 73, ../sass/pages/_blog-layout.sass */
+.blog-page ul.list-unstyled {
+  padding: 15px 0 15px 0;
+  margin: 0;
+}
+/* line 76, ../sass/pages/_blog-layout.sass */
+.blog-page ul.list-unstyled p {
+  margin: 0;
+  font-family: "Muli", sans-serif;
+}
+/* line 79, ../sass/pages/_blog-layout.sass */
+.blog-page ul.list-unstyled h5 {
+  color: #585858;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+}
+/* line 85, ../sass/pages/_blog-layout.sass */
+.blog-page .category-chips {
+  padding: 20px 15px 20px 15px;
+}
+/* line 88, ../sass/pages/_blog-layout.sass */
+.blog-page .my-blog-card {
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 57px) {
+  /* line 93, ../sass/pages/_blog-layout.sass */
+  .blog-page .blog-padding {
+    padding: 0;
+    margin-bottom: 16px;
+  }
+  /* line 96, ../sass/pages/_blog-layout.sass */
+  .blog-page .blog-properties {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  /* line 100, ../sass/pages/_blog-layout.sass */
+  .blog-page .blog-padding {
+    padding: 0 16px 0 0;
+    margin: 0;
+  }
+  /* line 103, ../sass/pages/_blog-layout.sass */
+  .blog-page .blog-properties {
+    padding: 0 0 0 16px;
   }
 }
