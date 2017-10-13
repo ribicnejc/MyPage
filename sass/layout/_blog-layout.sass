@@ -5,9 +5,6 @@
   width: 100%
   height: 315px
 
-.blog-img-content
-  padding: 0
-
 .breadcrumb
   background-color: transparent
   padding: 0 0 0px
@@ -24,6 +21,24 @@
   p
     text-align: left
     padding: 0px 0 10px
+
+
+.blog-img-content
+  padding: 0
+  overflow: hidden
+  img:hover, img:focus
+    transform: scale(1.25)
+    box-shadow: 0 0.5em 0.5em -0.4em $color-font-gray2
+    filter: brightness(80%)
+    cursor: pointer
+    transition-duration: 2s
+  img
+    -webkit-transition: all 1s ease
+    -moz-transition: all 1s ease
+    -ms-transition: all 1s ease
+    -o-transition: all 1s ease
+    transition: all 1s ease
+
 
 //Small break point
 @media screen and (min-width: 57px)

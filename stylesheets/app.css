@@ -1012,88 +1012,105 @@ footer p {
 }
 
 /* line 8, ../sass/layout/_blog-layout.sass */
-.blog-img-content {
-  padding: 0;
-}
-
-/* line 11, ../sass/layout/_blog-layout.sass */
 .breadcrumb {
   background-color: transparent;
   padding: 0 0 0px;
 }
-/* line 14, ../sass/layout/_blog-layout.sass */
+/* line 11, ../sass/layout/_blog-layout.sass */
 .breadcrumb .breadcrumb-item {
   color: #757575;
 }
 
-/* line 17, ../sass/layout/_blog-layout.sass */
+/* line 14, ../sass/layout/_blog-layout.sass */
 .blog-text-content {
   padding: 70px 40px 60px;
   background-color: #fff;
 }
-/* line 20, ../sass/layout/_blog-layout.sass */
+/* line 17, ../sass/layout/_blog-layout.sass */
 .blog-text-content h6 {
   color: #757575;
   font-size: 21px;
   font-weight: 600;
 }
-/* line 24, ../sass/layout/_blog-layout.sass */
+/* line 21, ../sass/layout/_blog-layout.sass */
 .blog-text-content p {
   text-align: left;
   padding: 0px 0 10px;
 }
 
+/* line 26, ../sass/layout/_blog-layout.sass */
+.blog-img-content {
+  padding: 0;
+  overflow: hidden;
+}
+/* line 29, ../sass/layout/_blog-layout.sass */
+.blog-img-content img:hover, .blog-img-content img:focus {
+  transform: scale(1.25);
+  box-shadow: 0 0.5em 0.5em -0.4em #757575;
+  filter: brightness(80%);
+  cursor: pointer;
+  transition-duration: 2s;
+}
+/* line 35, ../sass/layout/_blog-layout.sass */
+.blog-img-content img {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
 @media screen and (min-width: 57px) {
-  /* line 30, ../sass/layout/_blog-layout.sass */
+  /* line 45, ../sass/layout/_blog-layout.sass */
   .blog-text-content {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  /* line 34, ../sass/layout/_blog-layout.sass */
+  /* line 49, ../sass/layout/_blog-layout.sass */
   .blog-text-content h6 {
     text-align: center;
   }
-  /* line 36, ../sass/layout/_blog-layout.sass */
+  /* line 51, ../sass/layout/_blog-layout.sass */
   .blog-text-content p {
     text-align: center;
   }
-  /* line 38, ../sass/layout/_blog-layout.sass */
+  /* line 53, ../sass/layout/_blog-layout.sass */
   .blog-text-content .ancher-read-more {
     text-align: center;
     display: block;
-  }
-  /* line 41, ../sass/layout/_blog-layout.sass */
-  .blog-text-content .breadcrumb {
-    display: inline-block;
-  }
-}
-@media (min-width: 768px) {
-  /* line 46, ../sass/layout/_blog-layout.sass */
-  .blog-text-content {
-    text-align: left;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  /* line 50, ../sass/layout/_blog-layout.sass */
-  .blog-text-content h6 {
-    text-align: left;
-  }
-  /* line 52, ../sass/layout/_blog-layout.sass */
-  .blog-text-content p {
-    text-align: left;
-  }
-  /* line 54, ../sass/layout/_blog-layout.sass */
-  .blog-text-content .ancher-read-more {
-    text-align: left;
   }
   /* line 56, ../sass/layout/_blog-layout.sass */
   .blog-text-content .breadcrumb {
     display: inline-block;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   /* line 61, ../sass/layout/_blog-layout.sass */
+  .blog-text-content {
+    text-align: left;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  /* line 65, ../sass/layout/_blog-layout.sass */
+  .blog-text-content h6 {
+    text-align: left;
+  }
+  /* line 67, ../sass/layout/_blog-layout.sass */
+  .blog-text-content p {
+    text-align: left;
+  }
+  /* line 69, ../sass/layout/_blog-layout.sass */
+  .blog-text-content .ancher-read-more {
+    text-align: left;
+  }
+  /* line 71, ../sass/layout/_blog-layout.sass */
+  .blog-text-content .breadcrumb {
+    display: inline-block;
+  }
+}
+@media (min-width: 992px) {
+  /* line 76, ../sass/layout/_blog-layout.sass */
   .blog-text-content {
     padding: 70px 40px 60px;
   }
@@ -1220,76 +1237,76 @@ div#map {
     height: 150px;
   }
 }
-/* line 2, ../sass/pages/_blog-layout.sass */
+/* line 2, ../sass/pages/_blog-page.sass */
 .blog-page .section-text {
   margin-bottom: 20px;
 }
-/* line 4, ../sass/pages/_blog-layout.sass */
+/* line 4, ../sass/pages/_blog-page.sass */
 .blog-page .blog-container {
   margin-top: -300px;
 }
-/* line 6, ../sass/pages/_blog-layout.sass */
+/* line 6, ../sass/pages/_blog-page.sass */
 .blog-page .blog-container h4 {
   color: #fff;
 }
-/* line 9, ../sass/pages/_blog-layout.sass */
+/* line 9, ../sass/pages/_blog-page.sass */
 .blog-page .blog-title {
   font-family: "Raleway", sans-serif;
   color: #fff;
 }
-/* line 12, ../sass/pages/_blog-layout.sass */
+/* line 12, ../sass/pages/_blog-page.sass */
 .blog-page .blog-title h2, .blog-page .blog-title p {
   display: inline-block;
   font-weight: 600;
 }
-/* line 15, ../sass/pages/_blog-layout.sass */
+/* line 15, ../sass/pages/_blog-page.sass */
 .blog-page .blog-title p {
   float: right;
   margin-top: 10px;
 }
-/* line 19, ../sass/pages/_blog-layout.sass */
+/* line 19, ../sass/pages/_blog-page.sass */
 .blog-page .blog-title-content {
   background-color: #159E5C;
   padding: 20px;
 }
-/* line 23, ../sass/pages/_blog-layout.sass */
+/* line 23, ../sass/pages/_blog-page.sass */
 .blog-page .white-blog-separator {
   height: 3px;
   width: 100%;
   margin-top: 10px;
   background-color: #fff;
 }
-/* line 29, ../sass/pages/_blog-layout.sass */
+/* line 29, ../sass/pages/_blog-page.sass */
 .blog-page .blog-chips {
   margin-top: 20px;
 }
-/* line 32, ../sass/pages/_blog-layout.sass */
+/* line 32, ../sass/pages/_blog-page.sass */
 .blog-page .blog-padding {
   padding: 0 16px 0 0;
 }
-/* line 35, ../sass/pages/_blog-layout.sass */
+/* line 35, ../sass/pages/_blog-page.sass */
 .blog-page .blog-actual-text {
   background-color: #fff;
   padding: 20px;
 }
-/* line 38, ../sass/pages/_blog-layout.sass */
+/* line 38, ../sass/pages/_blog-page.sass */
 .blog-page .blog-actual-text p, .blog-page .blog-actual-text h3 {
   font-family: "Muli", sans-serif;
 }
-/* line 40, ../sass/pages/_blog-layout.sass */
+/* line 40, ../sass/pages/_blog-page.sass */
 .blog-page .blog-actual-text p {
   color: #757575;
 }
-/* line 42, ../sass/pages/_blog-layout.sass */
+/* line 42, ../sass/pages/_blog-page.sass */
 .blog-page .blog-actual-text h3 {
   color: #585858;
   font-weight: 600;
 }
-/* line 47, ../sass/pages/_blog-layout.sass */
+/* line 47, ../sass/pages/_blog-page.sass */
 .blog-page .blog-properties {
   padding: 0 0 0 16px;
 }
-/* line 49, ../sass/pages/_blog-layout.sass */
+/* line 49, ../sass/pages/_blog-page.sass */
 .blog-page .blog-properties h4 {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -1297,73 +1314,73 @@ div#map {
   color: #fff;
   background-color: #159E5C;
 }
-/* line 55, ../sass/pages/_blog-layout.sass */
+/* line 55, ../sass/pages/_blog-page.sass */
 .blog-page .blog-properties p {
   font-family: "Muli", sans-serif;
   color: #757575;
 }
-/* line 59, ../sass/pages/_blog-layout.sass */
+/* line 59, ../sass/pages/_blog-page.sass */
 .blog-page .blog-properties .my-blog-card {
   background-color: #fff;
 }
-/* line 61, ../sass/pages/_blog-layout.sass */
+/* line 61, ../sass/pages/_blog-page.sass */
 .blog-page .blog-properties .my-blog-card .md-chip {
   background-color: #1E6ECA;
 }
-/* line 64, ../sass/pages/_blog-layout.sass */
+/* line 64, ../sass/pages/_blog-page.sass */
 .blog-page .blog-properties .my-blog-description {
   padding: 30px 15px 30px 15px;
   margin: 0;
 }
-/* line 68, ../sass/pages/_blog-layout.sass */
+/* line 68, ../sass/pages/_blog-page.sass */
 .blog-page .recent-post-image {
   height: 75px;
   width: auto;
   border-radius: 50%;
 }
-/* line 73, ../sass/pages/_blog-layout.sass */
+/* line 73, ../sass/pages/_blog-page.sass */
 .blog-page ul.list-unstyled {
   padding: 15px 0 15px 0;
   margin: 0;
 }
-/* line 76, ../sass/pages/_blog-layout.sass */
+/* line 76, ../sass/pages/_blog-page.sass */
 .blog-page ul.list-unstyled p {
   margin: 0;
   font-family: "Muli", sans-serif;
 }
-/* line 79, ../sass/pages/_blog-layout.sass */
+/* line 79, ../sass/pages/_blog-page.sass */
 .blog-page ul.list-unstyled h5 {
   color: #585858;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 17px;
 }
-/* line 85, ../sass/pages/_blog-layout.sass */
+/* line 85, ../sass/pages/_blog-page.sass */
 .blog-page .category-chips {
   padding: 20px 15px 20px 15px;
 }
-/* line 88, ../sass/pages/_blog-layout.sass */
+/* line 88, ../sass/pages/_blog-page.sass */
 .blog-page .my-blog-card {
   margin-bottom: 16px;
 }
 @media screen and (min-width: 57px) {
-  /* line 93, ../sass/pages/_blog-layout.sass */
+  /* line 93, ../sass/pages/_blog-page.sass */
   .blog-page .blog-padding {
     padding: 0;
     margin-bottom: 16px;
   }
-  /* line 96, ../sass/pages/_blog-layout.sass */
+  /* line 96, ../sass/pages/_blog-page.sass */
   .blog-page .blog-properties {
     padding: 0;
   }
 }
 @media (min-width: 768px) {
-  /* line 100, ../sass/pages/_blog-layout.sass */
+  /* line 100, ../sass/pages/_blog-page.sass */
   .blog-page .blog-padding {
     padding: 0 16px 0 0;
     margin: 0;
   }
-  /* line 103, ../sass/pages/_blog-layout.sass */
+  /* line 103, ../sass/pages/_blog-page.sass */
   .blog-page .blog-properties {
     padding: 0 0 0 16px;
   }
