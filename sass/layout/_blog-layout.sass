@@ -26,18 +26,30 @@
 .blog-img-content
   padding: 0
   overflow: hidden
-  img:hover, img:focus
-    transform: scale(1.25)
-    box-shadow: 0 0.5em 0.5em -0.4em $color-font-gray2
-    filter: brightness(80%)
-    cursor: pointer
-    transition-duration: 2s
-  img
-    -webkit-transition: all 1s ease
-    -moz-transition: all 1s ease
-    -ms-transition: all 1s ease
-    -o-transition: all 1s ease
-    transition: all 1s ease
+  .comments
+    color: $color-white
+    float: right
+    position: relative
+    padding: 0 15px 0 0
+    top: 0
+    margin-bottom: -2em
+  img, .comments
+    -webkit-transition: all .5s ease
+    -moz-transition: all .5s ease
+    -ms-transition: all .5s ease
+    -o-transition: all .5s ease
+    transition: all .5s ease
+
+  &:hover, &:focus
+    img
+      transform: scale(1.25)
+      box-shadow: 0 0.5em 0.5em -0.4em $color-font-gray2
+      filter: brightness(80%)
+      cursor: pointer
+      transition-duration: 1s
+    .comments
+      top: -2em
+      transition-duration: .5s
 
 
 //Small break point

@@ -18,3 +18,13 @@ function scrollToContact() {
         scrollTop: $("#contact-layout").offset().top
     }, 1000);
 }
+
+function sendMail(){
+    var name = document.getElementById("input-name").value;
+    var subject = document.getElementById("input-subject").value;
+    var email = document.getElementById("input-email").value;
+    var message = document.getElementById("input-message").value;
+    if (name === "" || subject === "" || email === "" || message === "")
+        return;
+    window.open("mailto:" + email + "?subject=" + subject + "&body=" + message);
+}
