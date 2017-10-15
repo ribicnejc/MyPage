@@ -1,5 +1,3 @@
-// importScripts("https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js");
-
 function initMap() {
 
     var uluru = {lat: 46.170911, lng: 14.434540};
@@ -26,14 +24,14 @@ function sendMail(){
     var message = document.getElementById("input-message").value;
     if (name === "" || subject === "" || email === "" || message === "")
         return;
-    window.open("mailto:" + email + "?subject=" + subject + "&body=" + message);
+    window.open("mailto:nejc.ribic95@gmail.com" + "?subject=" + subject + "&body=" + message);
 }
 
-
-$(document).ready(function() {
-    setTimeout(function(){
-        $('body').addClass('loaded');
-        $('h1').css('color','#222222');
-    }, 1000);
-
-});
+function preLoad(){
+    $(document).ready(function() {
+        setTimeout(function(){
+            $('body').addClass('loaded');
+            $('h1').css('color','#222222');
+        }, 1000);
+    });
+}
