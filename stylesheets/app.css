@@ -399,7 +399,6 @@ label.text-area textarea:valid + .label-text {
 .raise-element {
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -1476,6 +1475,40 @@ div#map {
     height: 150px;
   }
 }
+/* line 1, ../sass/layout/_certificates-layout.sass */
+.certificate-content {
+  margin-top: 25px;
+}
+
+/* line 4, ../sass/layout/_certificates-layout.sass */
+.certificate-img {
+  width: 100%;
+  height: 315px;
+}
+
+/* line 9, ../sass/layout/_certificates-layout.sass */
+.certificate-img-content {
+  padding: 0;
+  overflow: hidden;
+}
+/* line 12, ../sass/layout/_certificates-layout.sass */
+.certificate-img-content .comments {
+  color: #fff;
+  float: right;
+  position: relative;
+  padding: 0 15px 0 0;
+  top: 0;
+  margin-bottom: -2em;
+}
+/* line 19, ../sass/layout/_certificates-layout.sass */
+.certificate-img-content img, .certificate-img-content .comments {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 /* line 2, ../sass/pages/_blog-page.sass */
 .blog-page .section-text {
   margin-bottom: 20px;
