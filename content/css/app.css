@@ -1359,10 +1359,8 @@ footer p {
   display: block;
   width: 100%;
   height: 370px;
-  background-image: url("https://nejcribic.com/assets/background-book.jpg");
   background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+  background: url("../assets/background-book.jpg") fixed center center;
 }
 
 /* line 1, ../../sass/layout/_contact-layout.sass */
