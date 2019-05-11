@@ -3081,7 +3081,7 @@ var Tooltip = function ($) {
     Tooltip.prototype.setElementContent = function setElementContent($element, content) {
       var html = this.config.html;
       if ((typeof content === 'undefined' ? 'undefined' : _typeof(content)) === 'object' && (content.nodeType || content.jquery)) {
-        // content is a DOM node or a jQuery
+        // src is a DOM node or a jQuery
         if (html) {
           if (!$(content).parent().is($element)) {
             $element.empty().append(content);
@@ -3374,7 +3374,7 @@ var Popover = function ($) {
     placement: 'right',
     trigger: 'click',
     content: '',
-    template: '<div class="popover" role="tooltip">' + '<h3 class="popover-title"></h3>' + '<div class="popover-content"></div></div>'
+    template: '<div class="popover" role="tooltip">' + '<h3 class="popover-title"></h3>' + '<div class="popover-src"></div></div>'
   });
 
   var DefaultType = $.extend({}, Tooltip.DefaultType, {
@@ -3388,7 +3388,7 @@ var Popover = function ($) {
 
   var Selector = {
     TITLE: '.popover-title',
-    CONTENT: '.popover-content'
+    CONTENT: '.popover-src'
   };
 
   var Event = {
@@ -3444,7 +3444,7 @@ var Popover = function ($) {
     // private
 
     Popover.prototype._getContent = function _getContent() {
-      return this.element.getAttribute('data-content') || (typeof this.config.content === 'function' ? this.config.content.call(this.element) : this.config.content);
+      return this.element.getAttribute('data-src') || (typeof this.config.content === 'function' ? this.config.content.call(this.element) : this.config.content);
     };
 
     // static
