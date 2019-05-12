@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/ribicnejc/MyPage#readme",
   "devDependencies": {
+    "css-loader": "^2.1.1",
     "npx": "^10.2.0",
+    "style-loader": "^0.23.1",
     "webpack": "^4.31.0",
     "webpack-cli": "^3.3.2"
   },
