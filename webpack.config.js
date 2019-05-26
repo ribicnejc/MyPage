@@ -1,38 +1,39 @@
-const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const extractCSS = new ExtractTextPlugin('bundle.min.css');
 
 module.exports = {
-    entry: './src/javascript/main.js',
+    entry: {
+        'bundle.min.css': [
+            __dirname + '/src/css/app.css',
+            __dirname + '/src/css/animate.css'
+        ]
+    },
+    devtool: '',
     output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
+        path: __dirname + '/dist/styles/',
+        filename: '[name]'
+
+    },
+    module: {
+        rules: [{
+            test: /\.css$/i,
+            use: extractCSS.extract({
+                use: {
+                    loader: 'css-loader',
+                    options: {
+                        minimize: true
+                    }
+                }
+            })
+        }]
+    },
+    resolve: {
+        alias: {},
+        modules: [],
+        extensions: ['.css']
     },
     plugins: [
-        new MiniCssExtractPlugin({
-            // Options similar to the same options in webpackOptions.output
-            // both options are optional
-            filename: '[name].css',
-            chunkFilename: '[id].css',
-            path: path.resolve(__dirname, 'dist')
-        }),
-    ],
-    module: {
-        rules: [
-            {
-                test: /\.css$/,
-                use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader,
-                        options: {
-                            // you can specify a publicPath here
-                            // by default it uses publicPath in webpackOptions.output
-                            publicPath: 'dist',
-                            hmr: process.env.NODE_ENV === 'development',
-                        },
-                    },
-                    'css-loader',
-                ],
-            },
-        ],
-    },
+        extractCSS
+    ]
 };
