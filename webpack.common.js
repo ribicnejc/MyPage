@@ -1,14 +1,16 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
+// const PATHS = {
+    // src: path.join(__dirname, 'src'), //absolute path to RepoDir/src
+    // dist: path.join(__dirname, 'dist') //absolute path to RepoDir/dist
+// };
 
 module.exports = {
     entry: {
-        'app.bundle.min.css': [
-            __dirname + '/src/css/app.css',
-            __dirname + '/src/css/animate.css'
-        ],
-        'app.bundle.min.js': './src/javascript/main.js'
+        app: './src/javascript/main.js'
     },
     plugins: [
         new CleanWebpackPlugin([
@@ -17,10 +19,24 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'Nejc Ribič',
             template: './src/index.html'
-        })
+        }),
+        new CopyWebpackPlugin([
+            {
+                from: 'src/assets',
+                to: 'assets'
+            },
+            {
+                from: 'src/css', //Will resolve to RepoDir/src/css and all *.css files from this directory
+                to: 'css' //Copies all matched css files from above dest to dist/css
+            },
+            {
+                from: 'src/javascript', //Will resolve to RepoDir/src/css and all *.css files from this directory
+                to: 'javascript' //Copies all matched css files from above dest to dist/css
+            }
+        ])
     ],
     output: {
-        filename: '[name]',
+        filename: 'javascript/[name].js',
         path: path.resolve(__dirname, 'dist/')
     },
     module: {

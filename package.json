@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
-    "build2": "webpack"
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +20,7 @@
   "homepage": "https://github.com/ribicnejc/MyPage#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^5.0.3",
     "css-loader": "^2.1.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
