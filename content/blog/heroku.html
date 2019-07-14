@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Required meta tags-->
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+
+
+    <!-- Material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap-4.0.0-alpha.6-dist/css/bootstrap-grid.min.css">
+
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="../css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/app.css">
+
+
+    <!--Icons-->
+    <link rel="shortcut icon" href="../assets/tab-icon.ico"/>
+
+
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../javascript/jQuery/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="header-background section"></div>
+</header>
+<div class="container-fluid">
+
+    <!--==========================================
+                            PRE-LOADING
+        ===========================================-->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <!--==========================================
+                        BLOG CONTENT
+        ===========================================-->
+    <div class="myPageContainer blog-page">
+        <section class="blog-container">
+            <div class="">
+                <!-- SECTION TITLE -->
+                <div class="section-title">
+                    <h4 class="text-uppercase text-center section-text"><img class="img-fluid section-icon"
+                                                                             src="../assets/post-it.png" alt="Blog icon">BLOG
+                    </h4>
+                </div>
+            </div>
+
+            <div>
+                <div class="row">
+
+                    <div class="col-md-8 blog-padding">
+                        <div class="shadow-card">
+                            <img class="img-fluid" src="../assets/heroku-logo.png">
+                            <div class="blog-core">
+                                <div class="blog-title-content">
+                                <span class="blog-title">
+                                    <h2 align="left">Upload API to Heroku</h2><p align="right">October 11, 2017</p>
+                                </span>
+                                    <div class="white-blog-separator"></div>
+                                    <div class="blog-chips">
+                                        <div class="md-chip">
+                                            <div class="md-chip-img">
+                                                <span class="md-chip-span blue"><img class="img-fluid"
+                                                                                     src="../assets/meSquare385.jpg"></span>
+                                            </div>
+                                            <span class="md-chip-text">Nejc Ribič</span>
+                                        </div>
+                                        <div class="md-chip">
+                                            <span class="md-chip-text">API</span>
+                                        </div>
+                                        <div class="md-chip">
+                                            <span class="md-chip-text">Heroku</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog-actual-text">
+                                    <p>Heroku is a cloud platform that lets companies build, deliver, monitor and scale
+                                        apps, as they are saying on their offical website. I also like their moto or
+                                        main sentence which says, »We're the fastest way to go from idea to URL,
+                                        bypassing all those infrastructure headaches.« As a matter affect that's quite
+                                        true. Within next steps you will see how simple actually is to deploy something
+                                        to Heroku, in my case we will be deploying some simple API made in JavaScript,
+                                        API will be running on Node.js</p>
+
+
+                                    <h3>Prepare your console</h3>
+                                    <p>For Heroku to work, first thing you need to do is install Heroku CLI which
+                                        installation you can find on their official website.</p>
+                                    <p>
+                                        <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up">Set
+                                            up CLI</a></p>
+                                    <p>After successfully installed CLI your console should have command »heroku«.</p>
+                                    <p>If you don't have account already, you should go and get one here: <a
+                                            href="https://signup.heroku.com/">https://signup.heroku.com/</a>.</p>
+
+
+                                    <h3>Create simple API</h3>
+                                    <p>Here is simple code written in javascript</p>
+
+                                    <script src="https://gist.github.com/ribicnejc/efa48e609546b5ee394e757535c5baca.js"></script>
+                                    <p>This code contains hard coded array of food names and ids for each food. Code handle some simple GET, POST, PUT requests. As I say this is just some dummy app to demonstrate power of heroku.</p>
+
+
+                                    <h3>Initialize project</h3>
+                                    <p><b>Step one:</b> Open console and go to directory where you project is located.</p>
+                                    <p><b>Step two:</b> use command <code>heroku login</code>. Heroku will prompt you to insert you email and password. <i>That is your account email and password</i></p>
+                                    <p><b>Step three:</b> use command <code>git init</code>. Heroku uses git to deploy files. You can also deploy files manually on the dashboard. What git init does, it initialize local git repository, so git can track versions of your files.</p>
+                                    <p><b>Step four:</b> use command <code>heroku create</code>. Heroku will create project which you can see on your dashboard. Now the project is set online and ready to be deployed.</p>
+                                    <p><b>Step five:</b> use command <code>heroku git:remote –a {your-project-name}</code>. What this command does is connect your local git repository with repository created in cloud.</p>
+
+                                    <h3>Add and deploy</h3>
+                                    <p><b>Step six:</b> use command <code>git add .</code> Git add actually add files to git, which then track it for you.</p>
+                                    <p><b>Step seven:</b> use command <code>commit –m »message«</code> Now we need to commit everything we changed, so we will be able to send that changes to server in our case heroku server.</p>
+                                    <p><b>Step eight:</b> use command <code>git push heroku master</code> This command send all our files, which we are tracking with git, online.</p>
+                                    <p><b>Step nine:</b> use command <code>heroku open</code> This command open the link which we are hosting on our files, in our case: <a href="https://immense-wave-64469.herokuapp.com/ingredients">https://immense-wave-64469.herokuapp.com/ingredients</a></p>
+                                    <p><b>Step ten:</b> enjoy coding and exploring service of heroku</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 blog-properties">
+                        <div class="shadow-card my-blog-card">
+                            <h4>My Blog</h4>
+                            <p class="my-blog-description">
+                                As a student of computer science I learned something very important, when hard days comes,
+                                you have to keep working and learning and eventually everything will turn alright!</p>
+                        </div>
+
+
+                        <!--<div class="shadow-card my-blog-card">-->
+                            <!--<h4>Recent Post</h4>-->
+                            <!--<div class="row">-->
+                                <!--<div class="col-12">-->
+                                    <!--<ul class="list-unstyled">-->
+                                        <!--<li class="media">-->
+                                            <!--<img class="d-flex mr-3 recent-post-image" content="assets/meSquare385.jpg"-->
+                                                 <!--alt="Generic placeholder image">-->
+                                            <!--<div class="media-body">-->
+                                                <!--<h5 class="mt-0 mb-1">List-based media object</h5>-->
+                                                <!--<p>Tes test nejc nejc test ribic </p>-->
+                                            <!--</div>-->
+                                        <!--</li>-->
+                                        <!--<li class="media my-4">-->
+                                            <!--<img class="d-flex mr-3 recent-post-image" content="assets/meSquare385.jpg"-->
+                                                 <!--alt="Generic placeholder image">-->
+                                            <!--<div class="media-body">-->
+                                                <!--<h5 class="mt-0 mb-1">List-based media object</h5>-->
+                                                <!--<p>Tes test nejc nejc test ribic </p>-->
+                                            <!--</div>-->
+                                        <!--</li>-->
+                                    <!--</ul>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+
+
+
+                        <div class="shadow-card my-blog-card">
+                            <h4>Categories</h4>
+                            <div class="category-chips">
+                                <div class="md-chip">
+                                    <span class="md-chip-text">API</span>
+                                </div>
+                                <div class="md-chip">
+                                    <span class="md-chip-text">Heroku</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--==========================================
+                       FOOTER
+   ===========================================-->
+    <footer class=" footer-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>© 2019 Blog. All rights reserved by <a href="http://www.nejcribic.com">Nejc Ribič.</a> Version: 1.0.1</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</div>
+<script src="../javascript/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<!--  Always Download latest version of Boostrap and add here-->
+<script src="../bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
+<script>
+    preLoad()
+</script>
+</body>
+</html>

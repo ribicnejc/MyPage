@@ -4,13 +4,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 // const PATHS = {
-    // src: path.join(__dirname, 'src'), //absolute path to RepoDir/src
+    // content: path.join(__dirname, 'content'), //absolute path to RepoDir/content
     // dist: path.join(__dirname, 'dist') //absolute path to RepoDir/dist
 // };
 
 module.exports = {
     entry: {
-        app: './src/javascript/main.js'
+        app: './content/javascript/main.js'
     },
     plugins: [
         new CleanWebpackPlugin([
@@ -18,20 +18,24 @@ module.exports = {
         ]),
         new HtmlWebpackPlugin({
             title: 'Nejc Ribič',
-            template: './src/index.html'
+            template: './content/index.html'
         }),
         new CopyWebpackPlugin([
             {
-                from: 'src/assets',
+                from: 'content/assets',
                 to: 'assets'
             },
             {
-                from: 'src/css', //Will resolve to RepoDir/src/css and all *.css files from this directory
+                from: 'content/css', //Will resolve to RepoDir/content/css and all *.css files from this directory
                 to: 'css' //Copies all matched css files from above dest to dist/css
             },
             {
-                from: 'src/javascript', //Will resolve to RepoDir/src/css and all *.css files from this directory
+                from: 'content/javascript', //Will resolve to RepoDir/content/css and all *.css files from this directory
                 to: 'javascript' //Copies all matched css files from above dest to dist/css
+            },
+            {
+                from: "content/bootstrap-1.0-dist",
+                to: "bootstrap-1.0-dist/"
             }
         ])
     ],
