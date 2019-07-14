@@ -3922,4 +3922,4 @@
   Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-//# sourceMappingURL=bootstrap.js.map
+//# sourceMappingURL=bootstrap-1.0-dist.js.map
