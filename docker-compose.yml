@@ -4,6 +4,7 @@ services:
     build:
       context: .
       dockerfile: .docker/Dockerfile
+    restart: always
     image: me-mypage-docker
     ports:
       - 8001:80
